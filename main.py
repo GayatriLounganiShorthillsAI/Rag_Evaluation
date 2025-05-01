@@ -9,9 +9,11 @@ from sentence_transformers import SentenceTransformer, CrossEncoder
 import streamlit as st
 from io import StringIO
 
-HISTORY_FILE = "data/conversation_history.json"
+
+HISTORY_FILE = "data/history.json"
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llama3"
+
 
 class WeaviateRetriever:
     def __init__(self, weaviate_url: str = "http://localhost:8080", embedding_model: str = "intfloat/e5-base-v2"):
@@ -21,10 +23,10 @@ class WeaviateRetriever:
     def retrieve(self, query: str, top_k: int = 5) -> List[str]:
         query_embedding = self.embed_model.encode([query])
         query_embedding = np.array(query_embedding).astype(np.float32)
-        response = self.client.query.get("WorldWarChunk", ["text"])\
+        response = self.client.query.get("Documents", ["text"])\
             .with_near_vector({"vector": query_embedding[0]})\
             .with_limit(top_k).do()
-        return [item["text"] for item in response["data"]["Get"]["WorldWarChunk"]]
+        return [item["text"] for item in response["data"]["Get"]["Documents"]]
 
 class Reranker:
     def __init__(self, model_name: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"):
@@ -37,6 +39,7 @@ class Reranker:
         scores = self.model.predict(pairs)
         reranked = [chunk for _, chunk in sorted(zip(scores, chunks), reverse=True)]
         return reranked[:top_k]
+    
 
 class LlamaQuerier:
     def __init__(self, model: str = OLLAMA_MODEL, url: str = OLLAMA_URL):
@@ -99,7 +102,7 @@ class QAApp:
         if "history" not in st.session_state:
             st.session_state.history = self.history
 
-        st.sidebar.title("📜 Conversation History")
+        st.sidebar.title("📜 Chat History")
         if st.sidebar.button("🧹 Clear History"):
             st.session_state.history = []
             self.history = []
@@ -108,9 +111,9 @@ class QAApp:
 
         if st.sidebar.button("⬇️ Download History"):
             history_str = json.dumps(st.session_state.history, indent=2)
-            st.sidebar.download_button("Download", data=history_str, file_name="conversation_history.json")
+            st.sidebar.download_button("Download", data=history_str, file_name="history.json")
 
-        question = st.text_input("Ask your question about World War History:")
+        question = st.text_input("Ask your question about History:")
         if question:
             retrieved_chunks = self.retriever.retrieve(question, top_k=10)
             reranked_context = self.reranker.rerank(question, retrieved_chunks, top_k=5)
@@ -134,6 +137,7 @@ Answer:
 """
             answer = self.llm.query(prompt)
             st.session_state.history.append({"question": question, "answer": answer})
+            self.history = st.session_state.history  # sync session state to self.history
             self.save_history()
 
             st.markdown("**Answer:**")

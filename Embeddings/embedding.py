@@ -5,12 +5,13 @@ from typing import List
 from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+
 class ChunkUploader:
     def __init__(self, 
                  text_file: str,
                  embedding_model_name: str = "intfloat/e5-base-v2",
                  weaviate_url: str = "http://localhost:8080",
-                 class_name: str = "WorldWarChunk"):
+                 class_name: str = "Documents"):
         self.text_file = text_file
         self.class_name = class_name
         self.embed_model = SentenceTransformer(embedding_model_name)
@@ -20,6 +21,7 @@ class ChunkUploader:
         with open(self.text_file, "r", encoding="utf-8") as f:
             return f.read()
 
+
     def split_text_semantic(self, text: str, chunk_size: int = 800, chunk_overlap: int = 100) -> List[str]:
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
@@ -28,6 +30,7 @@ class ChunkUploader:
             length_function=len
         )
         return splitter.split_text(text)
+
 
     def create_weaviate_schema(self):
         self.client.schema.delete_all()
@@ -42,6 +45,7 @@ class ChunkUploader:
             ]
         }
         self.client.schema.create_class(class_obj)
+
 
     def insert_chunks(self, chunks: List[str]):
         embeddings = self.embed_model.encode(chunks, show_progress_bar=True)
@@ -68,5 +72,5 @@ class ChunkUploader:
 
 
 if __name__ == "__main__":
-    uploader = ChunkUploader("/home/shtlp_0012/codes/RAG/modern_history_combined.txt")
+    uploader = ChunkUploader("/home/shtlp_0047/Rag_ollama_2/Rag_Evaluation/data/modern_history_of_india.txt")
     uploader.run()
