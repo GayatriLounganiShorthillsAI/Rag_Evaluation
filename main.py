@@ -97,7 +97,7 @@ class QAApp:
             </style>
         """, unsafe_allow_html=True)
 
-        st.title(f"World War History Q&A (Powered by Local {OLLAMA_MODEL.capitalize()} 🦙)")
+        st.title(f"History Q&A ({OLLAMA_MODEL.capitalize()})")
 
         if "history" not in st.session_state:
             st.session_state.history = self.history

@@ -10,9 +10,9 @@ from bert_score import score as bert_score
 from typing import Dict
 
 # Config
-INPUT_FILE = "data/qa_with_predictions_part.xlsx"
-OUTPUT_FILE = "data/qa_evaluated_scores_part.xlsx"
-SUMMARY_FILE = "data/evaluation_summary_llama3.json"
+INPUT_FILE = "data/qa_with_predictions.xlsx"
+OUTPUT_FILE = "data/qa_evaluated_bert_scores.xlsx"
+SUMMARY_FILE = "data/bert_testing_score.json"
 
 # Metric Weights
 METRIC_WEIGHTS = {
@@ -64,7 +64,7 @@ class QAEvaluator:
 
         for _, row in tqdm(df.iterrows(), total=len(df), desc="Evaluating"):
             reference = str(row["Answer"])
-            prediction = str(row["predicted_answer"])
+            prediction = str(row["Predicted_Answer"])
 
             metrics = self.calculate_metrics(prediction, reference)
             rouge_scores.append(metrics["rouge_score"])
@@ -97,4 +97,5 @@ class QAEvaluator:
 if __name__ == "__main__":
     evaluator = QAEvaluator()
     evaluator.evaluate_excel(INPUT_FILE, OUTPUT_FILE, SUMMARY_FILE)
+
 
