@@ -10,6 +10,9 @@ from bert_score import score as bert_score
 from typing import Dict, List
 import logging 
 
+# Load environment variables
+load_dotenv()
+
 
 # Constants
 INPUT_FILE = os.getenv("INPUT_FILE", "data/qa_with_predictions.xlsx")
