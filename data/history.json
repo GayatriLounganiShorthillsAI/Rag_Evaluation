@@ -1,6 +1,38 @@
 [
   {
-    "question": "heeyy",
-    "answer": "I'm happy to help! However, I don't see a question in your prompt. Could you please rephrase or ask a specific question so I can provide an accurate answer? The text appears to be a poem or passage from Urdu literature, but it doesn't contain any historical information about the topics #Mewar, #Hoysalas, or #Humayun. If you'd like to discuss these topics, I'd be happy to help with that as well!"
+    "question": "what is indua valley civilisation ?",
+    "answer": "According to the provided context, the Indus Valley Civilisation dates back 6,000 years to the pre-maritime history of India. It is mentioned that the first tidal dock in India was built at Lothal around 2300 BC during this civilization, near the present-day harbor of Mangrol on the Gujarat coast.\n\nSo, based on the provided context, the answer is:\n\nThe Indus Valley Civilisation dates back 6,000 years to the pre-maritime history of India."
+  },
+  {
+    "question": "Who was identified with Indra in the Tolkappiyam?",
+    "answer": "According to the context, V\u0113nta\u1e49 was identified with Indra in the Tolkappiyam."
+  },
+  {
+    "question": "what is indus valley civilisation ?",
+    "answer": "The Indus Valley Civilisation is a pre-Indus Valley civilization, dating back 6,000 years. It is also mentioned as being around 2300 BC when the first tidal dock in India was built at Lothal during this civilisation, near the present-day harbor of Mangrol on the Gujarat coast."
+  },
+  {
+    "question": "Hello ",
+    "answer": "I see you're not asking a question related to the provided historical context. Since there is no specific topic or query mentioned, I'll respond with:\n\n\"Answer not found in the context.\""
+  },
+  {
+    "question": "Hello ",
+    "answer": "Hello!"
+  },
+  {
+    "question": "Bye",
+    "answer": "Bye!"
+  },
+  {
+    "question": "wassup ",
+    "answer": "Hii!"
+  },
+  {
+    "question": "hello",
+    "answer": "Hello!"
+  },
+  {
+    "question": "hii ",
+    "answer": "Hello!"
   }
 ]

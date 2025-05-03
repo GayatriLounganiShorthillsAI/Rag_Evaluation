@@ -1,19 +1,90 @@
-
-
-
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 import time
 import os
+import logging
 
-TOPICS = [
+
+class WikipediaScraper:
+    def __init__(self, topics, save_dir="data", log_file="logs/scraper.log"):
+        self.topics = topics
+        self.headers = {"User-Agent": "Mozilla/5.0"}
+        self.save_dir = save_dir
+        os.makedirs(self.save_dir, exist_ok=True)
+        os.makedirs(os.path.dirname(log_file), exist_ok=True)
+
+        # Setup logging
+        logging.basicConfig(
+            filename=log_file,
+            level=logging.INFO,
+            format="%(asctime)s - %(levelname)s - %(message)s"
+        )
+        self.logger = logging.getLogger(__name__)
+
+    @staticmethod
+    def clean_text(text):
+        return ' '.join(text.split())
+
+    def scrape_page(self, title, retries=3, delay=2):
+        url = f"https://en.wikipedia.org/wiki/{title}"
+        for attempt in range(retries):
+            try:
+                response = requests.get(url, headers=self.headers, timeout=10)
+                if response.status_code != 200:
+                    self.logger.warning(f"Failed to fetch {url} - Status: {response.status_code}")
+                    continue
+
+                soup = BeautifulSoup(response.text, "html.parser")
+                content_div = soup.find("div", {"class": "mw-parser-output"})
+                if not content_div:
+                    self.logger.warning(f"Content div not found for {title}")
+                    continue
+
+                paragraphs = content_div.find_all("p")
+                text = "\n".join(
+                    self.clean_text(p.get_text()) for p in paragraphs if len(p.get_text(strip=True)) > 50
+                )
+                return text
+
+            except Exception as e:
+                self.logger.error(f"Error scraping {title} (Attempt {attempt}/{retries}): {e}")
+                time.sleep(delay)
+        return ""
+
+    def save_to_file(self, file_path, content):
+        try:
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(content.strip())
+            self.logger.info(f"Data saved successfully to {file_path}")
+        except Exception as e:
+            self.logger.error(f"Error saving file {file_path}: {e}")
+
+    def scrape_all(self):
+        full_text = ""
+        for topic in tqdm(self.topics, desc="Scraping Wikipedia Topics"):
+            self.logger.info(f"Scraping topic: {topic}")
+            print(f"Scraping: {topic}")
+            text = self.scrape_page(topic)
+            if text:
+                full_text += f"\n\n---\n\n# {topic.replace('_', ' ')}\n\n{text}"
+            else:
+                self.logger.warning(f"No content fetched for: {topic}")
+                print(f"No content fetched for: {topic}")
+            time.sleep(1.5)
+
+        output_file = os.path.join(self.save_dir, "modern_history_of_india.txt")
+        self.save_to_file(output_file, full_text)
+
+
+if __name__ == "__main__":
+    TOPICS = [
     
     "Indus_Valley_Civilisation",
     "Vedic_period",
     "Mahajanapadas",
     "Maurya_Empire",
-    "Ashoka",
+     "Ashoka",
     "Gupta_Empire",
     "Nalanda",
     "Chalukya_dynasty",
@@ -214,55 +285,5 @@ TOPICS = [
     "History_of_the_Indian_rupee"
 ]
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
-
-SAVE_DIR = "data"
-os.makedirs(SAVE_DIR, exist_ok=True)
-
-def clean_text(text):
-    return ' '.join(text.split())
-
-def scrape_wikipedia_page(title, retries=3, delay=2):
-    url = f"https://en.wikipedia.org/wiki/{title}"
-    for attempt in range(retries):
-        try:
-            response = requests.get(url, headers=HEADERS, timeout=10)
-            if response.status_code != 200:
-                print(f"⚠️ Failed to fetch {title} (Status code: {response.status_code})")
-                continue
-
-            soup = BeautifulSoup(response.text, "html.parser")
-            content_div = soup.find("div", {"class": "mw-parser-output"})
-            if not content_div:
-                print(f"⚠️ Content div not found for {title}")
-                continue
-
-            paragraphs = content_div.find_all("p")
-            text = "\n".join(clean_text(p.get_text()) for p in paragraphs if len(p.get_text(strip=True)) > 50)
-            return text
-
-        except Exception as e:
-            print(f"❌ Error scraping {title} (Attempt {attempt + 1}/{retries}): {e}")
-            time.sleep(delay)
-    return ""
-
-def save_data(topics):
-    full_text = ""
-    for topic in tqdm(topics, desc="Scraping Wikipedia Topics"):
-        print(f"🔍 Scraping: {topic}")
-        text = scrape_wikipedia_page(topic)
-        if text:
-            full_text += f"\n\n---\n\n# {topic.replace('_', ' ')}\n\n{text}"
-        else:
-            print(f"🚫 No content fetched for: {topic}")
-        time.sleep(1.5)  # Be gentle on Wikipedia
-
-    file_path = os.path.join(SAVE_DIR, "modern_history_of_india.txt")
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(full_text.strip())
-    print(f"\n✅ Data saved to: {file_path}")
-
-if __name__ == "__main__":
-    save_data(TOPICS)
+    scraper = WikipediaScraper(topics=TOPICS)
+    scraper.scrape_all()
