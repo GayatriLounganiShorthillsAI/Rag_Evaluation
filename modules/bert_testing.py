@@ -8,11 +8,26 @@ from sentence_transformers import SentenceTransformer
 from rouge_score import rouge_scorer
 from bert_score import score as bert_score
 from typing import Dict, List
+import logging 
+
 
 # Constants
-INPUT_FILE = "data/qa_with_predictions.xlsx"
-OUTPUT_FILE = "data/qa_evaluated_bert_scores.xlsx"
-SUMMARY_FILE = "data/bert_testing_score.json"
+INPUT_FILE = os.getenv("INPUT_FILE", "data/qa_with_predictions.xlsx")
+OUTPUT_FILE = os.getenv("OUTPUT_FILE", "data/qa_evaluated_bert_scores.xlsx")
+SUMMARY_FILE = os.getenv("SUMMARY_FILE", "data/bert_testing_score.json")
+
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler("logs/bert_evaluation.log"),
+        logging.StreamHandler()
+    ]
+)
+
+
 
 METRIC_WEIGHTS = {
     "rouge_score": 0,
@@ -25,6 +40,8 @@ class QAEvaluator:
     def __init__(self):
         self.similarity_model = SentenceTransformer("intfloat/e5-base-v2")
         self.rouge = rouge_scorer.RougeScorer(['rougeL'], use_stemmer=True)
+        logging.info("QAEvaluator initialized with E5 and ROUGE scorers.")
+
 
     def _cosine_similarity(self, emb1: np.ndarray, emb2: np.ndarray) -> float:
         return float(np.dot(emb1, emb2) / (np.linalg.norm(emb1) * np.linalg.norm(emb2)))
@@ -50,6 +67,8 @@ class QAEvaluator:
             METRIC_WEIGHTS["bert_score_f1"] * bert_f1
         )
 
+        logging.debug(f"Metrics -> Cosine: {cosine_sim:.4f}, ROUGE: {rouge:.4f}, BERT-F1: {bert_f1:.4f}, Final: {final_score:.4f}")
+
         return {
             "rouge_score": rouge,
             "cosine_similarity": cosine_sim,
@@ -69,10 +88,13 @@ class QAEvaluator:
         return "F (Poor)"
 
     def evaluate_excel(self, input_path: str, output_path: str, summary_path: str) -> None:
+        logging.info(f"Reading input Excel file: {input_path}")
         df = pd.read_excel(input_path)
+
 
         required_cols = {"Question", "Answer", "Predicted_Answer"}
         if not required_cols.issubset(df.columns):
+            logging.error(f"Excel file missing required columns: {required_cols}")
             raise ValueError(f"Excel file must contain columns: {required_cols}")
 
         scores = {
@@ -82,19 +104,27 @@ class QAEvaluator:
             "final_score": []
         }
 
-        for _, row in tqdm(df.iterrows(), total=len(df), desc="Evaluating"):
+
+        logging.info("Starting evaluation of predictions...")
+
+        for index, row in tqdm(df.iterrows(), total=len(df), desc="Evaluating"):
             reference = str(row["Answer"])
             prediction = str(row["Predicted_Answer"])
 
-            metrics = self.calculate_metrics(prediction, reference)
-            for key in scores:
-                scores[key].append(metrics[key])
+            try:
+                metrics = self.calculate_metrics(prediction, reference)
+                for key in scores:
+                    scores[key].append(metrics[key])
+            except Exception as e:
+                logging.warning(f"Error evaluating row {index}: {e}")
+                for key in scores:
+                    scores[key].append(0.0)
 
         for metric, values in scores.items():
             df[metric] = values
 
         df.to_excel(output_path, index=False)
-        print(f"✅ Evaluation scores saved to: {output_path}")
+        logging.info(f"Evaluation results saved to: {output_path}")
 
         summary = {metric: float(np.mean(values)) for metric, values in scores.items()}
         summary["grade"] = self.calculate_grade(summary["final_score"])
@@ -102,9 +132,8 @@ class QAEvaluator:
         with open(summary_path, "w") as f:
             json.dump(summary, f, indent=4)
 
-        print(f"📊 Summary saved to: {summary_path}")
-        print(json.dumps(summary, indent=2))
-
+        logging.info(f"Summary saved to: {summary_path}")
+        logging.info(f"Summary:\n{json.dumps(summary, indent=2)}")
 
 if __name__ == "__main__":
     evaluator = QAEvaluator()
