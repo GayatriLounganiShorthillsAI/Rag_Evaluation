@@ -1,0 +1,143 @@
+2025-05-03 13:07:56,108 [INFO] Use pytorch device_name: cpu
+2025-05-03 13:07:56,108 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-03 13:08:00,899 [INFO] Use pytorch device: cpu
+2025-05-03 13:08:21,213 [INFO] Use pytorch device_name: cpu
+2025-05-03 13:08:21,213 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-03 13:08:26,974 [INFO] Use pytorch device: cpu
+2025-05-04 11:27:49,668 [ERROR] Error initializing WeaviateRetriever: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /v1/.well-known/openid-configuration (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x778f242e1780>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-05-04 11:27:54,434 [ERROR] Error initializing WeaviateRetriever: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /v1/.well-known/openid-configuration (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x778f23d4a260>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-05-04 11:28:25,391 [INFO] Use pytorch device_name: cpu
+2025-05-04 11:28:25,391 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 11:28:31,043 [INFO] Use pytorch device: cpu
+2025-05-04 11:29:15,473 [INFO] Use pytorch device_name: cpu
+2025-05-04 11:29:15,473 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 11:29:20,231 [INFO] Use pytorch device: cpu
+2025-05-04 11:29:34,383 [INFO] Use pytorch device_name: cpu
+2025-05-04 11:29:34,383 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 11:29:38,560 [INFO] Use pytorch device: cpu
+2025-05-04 11:30:59,537 [INFO] Use pytorch device_name: cpu
+2025-05-04 11:30:59,538 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 11:31:07,498 [INFO] Use pytorch device: cpu
+2025-05-04 12:04:41,130 [ERROR] Failed to query model: Connection failed
+2025-05-04 12:04:41,183 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:04:41,183 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:04:46,566 [INFO] Use pytorch device: cpu
+2025-05-04 12:04:47,072 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:04:47,073 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:04:47,967 [ERROR] Error initializing WeaviateRetriever: 
+2025-05-04 12:04:48,087 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:04:48,087 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:04:48,985 [ERROR] Error initializing WeaviateRetriever: 'type'
+2025-05-04 12:04:49,041 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:04:49,041 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:04:49,933 [ERROR] Error initializing WeaviateRetriever: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:04:51,395 [INFO] Use pytorch device: cpu
+2025-05-04 12:04:52,412 [WARNING] No chunks to rerank.
+2025-05-04 12:05:23,484 [ERROR] Failed to query model: Connection failed
+2025-05-04 12:05:23,568 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:05:23,568 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:05:28,231 [INFO] Use pytorch device: cpu
+2025-05-04 12:05:28,731 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:05:28,731 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:05:29,613 [ERROR] Error initializing WeaviateRetriever: 
+2025-05-04 12:05:29,663 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:05:29,663 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:05:30,642 [ERROR] Error initializing WeaviateRetriever: 'type'
+2025-05-04 12:05:30,685 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:05:30,685 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:05:31,574 [ERROR] Error initializing WeaviateRetriever: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:05:33,010 [INFO] Use pytorch device: cpu
+2025-05-04 12:05:33,624 [WARNING] No chunks to rerank.
+2025-05-04 12:14:39,770 [ERROR] Failed to query model: Connection failed
+2025-05-04 12:14:39,828 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:14:39,828 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:14:46,490 [INFO] Use pytorch device: cpu
+2025-05-04 12:14:47,138 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:14:47,138 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:14:48,392 [ERROR] Error initializing WeaviateRetriever: 
+2025-05-04 12:14:48,447 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:14:48,447 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:14:49,350 [ERROR] Error initializing WeaviateRetriever: 'type'
+2025-05-04 12:14:49,401 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:14:49,401 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:14:50,359 [ERROR] Error initializing WeaviateRetriever: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:14:51,781 [INFO] Use pytorch device: cpu
+2025-05-04 12:14:52,233 [WARNING] No chunks to rerank.
+2025-05-04 12:20:49,602 [ERROR] Failed to query model: Connection Error
+2025-05-04 12:20:49,672 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:20:49,672 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:20:55,405 [INFO] Use pytorch device: cpu
+2025-05-04 12:20:55,929 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:20:55,930 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:21:00,082 [INFO] Use pytorch device: cpu
+2025-05-04 12:21:00,545 [WARNING] Could not load JSON file data/history.json: 
+2025-05-04 12:21:00,598 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:21:00,598 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:21:05,602 [INFO] Use pytorch device: cpu
+2025-05-04 12:21:06,120 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:21:06,120 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:21:10,303 [INFO] Use pytorch device: cpu
+2025-05-04 12:21:10,784 [WARNING] Could not load JSON file data/history.json: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:21:10,786 [WARNING] No chunks to rerank.
+2025-05-04 12:21:10,787 [ERROR] Error initializing WeaviateRetriever: Connection Error
+2025-05-04 12:24:04,746 [ERROR] Failed to query model: Connection Error
+2025-05-04 12:24:04,842 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:24:04,842 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:24:09,244 [INFO] Use pytorch device: cpu
+2025-05-04 12:24:09,786 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:24:09,786 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:24:14,148 [INFO] Use pytorch device: cpu
+2025-05-04 12:24:14,604 [WARNING] Could not load JSON file data/history.json: 
+2025-05-04 12:24:14,675 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:24:14,675 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:24:19,508 [INFO] Use pytorch device: cpu
+2025-05-04 12:24:20,047 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:24:20,047 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:24:24,016 [INFO] Use pytorch device: cpu
+2025-05-04 12:24:24,478 [WARNING] Could not load JSON file data/history.json: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:24:24,479 [WARNING] No chunks to rerank.
+2025-05-04 12:24:24,480 [ERROR] Error initializing WeaviateRetriever: Connection Error
+2025-05-04 12:25:24,413 [ERROR] Failed to query model: Connection Error
+2025-05-04 12:25:24,460 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:25:24,460 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:25:31,357 [INFO] Use pytorch device: cpu
+2025-05-04 12:25:32,183 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:25:32,183 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:25:36,744 [INFO] Use pytorch device: cpu
+2025-05-04 12:25:37,201 [WARNING] Could not load JSON file data/history.json: 
+2025-05-04 12:25:37,265 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:25:37,265 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:25:42,016 [INFO] Use pytorch device: cpu
+2025-05-04 12:25:42,558 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:25:42,558 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:25:46,659 [INFO] Use pytorch device: cpu
+2025-05-04 12:25:47,113 [WARNING] Could not load JSON file data/history.json: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:25:47,114 [WARNING] No chunks to rerank.
+2025-05-04 12:25:47,116 [ERROR] Error initializing WeaviateRetriever: Connection Error
+2025-05-04 12:38:30,072 [ERROR] Failed to query model: Error querying model
+2025-05-04 12:38:34,599 [INFO] Use pytorch device: cpu
+2025-05-04 12:38:37,465 [INFO] Use pytorch device: cpu
+2025-05-04 12:38:41,770 [WARNING] No chunks to rerank.
+2025-05-04 12:38:46,380 [INFO] Use pytorch device: cpu
+2025-05-04 12:38:46,997 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:38:46,997 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:38:54,359 [ERROR] Retrieval failed: Retrieval failed
+2025-05-04 12:38:54,363 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:38:54,363 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:39:38,988 [ERROR] Failed to query model: Connection Error
+2025-05-04 12:39:39,060 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:39:39,060 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:39:44,503 [INFO] Use pytorch device: cpu
+2025-05-04 12:39:45,026 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:39:45,026 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:39:51,493 [INFO] Use pytorch device: cpu
+2025-05-04 12:39:52,108 [WARNING] Could not load JSON file data/history.json: 
+2025-05-04 12:39:52,340 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:39:52,340 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:39:56,378 [INFO] Use pytorch device: cpu
+2025-05-04 12:39:56,916 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:39:56,916 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 12:40:00,970 [INFO] Use pytorch device: cpu
+2025-05-04 12:40:01,447 [WARNING] Could not load JSON file data/history.json: Expecting value: line 1 column 1 (char 0)
+2025-05-04 12:40:01,448 [WARNING] No chunks to rerank.
+2025-05-04 12:40:01,449 [ERROR] Error initializing WeaviateRetriever: Connection Error

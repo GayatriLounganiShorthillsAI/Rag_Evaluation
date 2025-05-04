@@ -1,0 +1,30 @@
+2025-05-03 13:31:30,393 [INFO] Loaded text from data/modern_history_of_india.txt
+2025-05-03 13:31:30,449 [INFO] Split text into 3482 chunks
+2025-05-03 13:31:30,449 [INFO] LLaMAClient initialized with model: llama3 and URL: http://localhost:11434/api/generate
+2025-05-03 13:31:30,450 [INFO] Generating Q&A for 500 chunks
+2025-05-04 15:54:12,846 [INFO] Saved 1 Q&A pairs to dummy_output.csv
+2025-05-04 15:54:12,849 [INFO] Generating Q&A for 1 chunks
+2025-05-04 15:54:13,050 [INFO] Q&A generation complete
+2025-05-04 15:54:13,063 [INFO] Loaded text from dummy_path.txt
+2025-05-04 15:54:13,063 [INFO] Split text into 3 chunks
+2025-05-04 15:54:37,012 [INFO] Saved 1 Q&A pairs to dummy_output.csv
+2025-05-04 15:54:37,013 [INFO] Generating Q&A for 1 chunks
+2025-05-04 15:54:37,214 [INFO] Q&A generation complete
+2025-05-04 15:54:37,222 [INFO] Loaded text from dummy_path.txt
+2025-05-04 15:54:37,222 [INFO] Split text into 3 chunks
+2025-05-04 15:54:56,149 [INFO] Saved 1 Q&A pairs to dummy_output.csv
+2025-05-04 15:54:56,151 [INFO] Generating Q&A for 1 chunks
+2025-05-04 15:54:56,351 [INFO] Q&A generation complete
+2025-05-04 15:54:56,359 [INFO] Loaded text from dummy_path.txt
+2025-05-04 15:54:56,359 [INFO] Split text into 3 chunks
+2025-05-04 15:57:20,131 [INFO] Saved 1 Q&A pairs to dummy_output.csv
+2025-05-04 15:57:20,133 [INFO] Generating Q&A for 1 chunks
+2025-05-04 15:57:20,336 [INFO] Q&A generation complete
+2025-05-04 15:57:20,345 [INFO] Loaded text from dummy_path.txt
+2025-05-04 15:57:20,345 [INFO] Split text into 3 chunks
+2025-05-04 15:58:44,791 [INFO] Saved 1 Q&A pairs to dummy_output.csv
+2025-05-04 15:58:44,792 [INFO] LLaMAClient initialized with model: llama3 and URL: http://localhost:11434/api/generate
+2025-05-04 15:58:44,792 [INFO] Generating Q&A for 1 chunks
+2025-05-04 15:58:44,993 [INFO] Q&A generation complete
+2025-05-04 15:58:45,001 [INFO] Loaded text from dummy_path.txt
+2025-05-04 15:58:45,002 [INFO] Split text into 3 chunks

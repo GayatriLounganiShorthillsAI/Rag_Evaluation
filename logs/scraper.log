@@ -1,0 +1,25 @@
+2025-05-03 13:22:55,428 - INFO - Scraping topic: Indus_Valley_Civilisation
+2025-05-03 13:22:56,593 - WARNING - No content fetched for: Indus_Valley_Civilisation
+2025-05-03 13:22:58,096 - INFO - Scraping topic: Vedic_period
+2025-05-03 13:23:00,455 - INFO - Scraping topic: Mahajanapadas
+2025-05-03 13:23:02,590 - INFO - Scraping topic: Maurya_Empire
+2025-05-03 13:23:03,573 - WARNING - No content fetched for: Maurya_Empire
+2025-05-03 13:23:05,077 - INFO - Data saved successfully to data/testing_scrapper.txt
+2025-05-04 15:32:38,925 - INFO - Data saved successfully to dummy_path.txt
+2025-05-04 15:32:38,930 - INFO - Scraping topic: Topic_One
+2025-05-04 15:32:40,433 - INFO - Scraping topic: Topic_Two
+2025-05-04 15:32:41,936 - ERROR - Error scraping Non_Existent_Topic (Attempt 0/3): Connection error
+2025-05-04 15:32:43,939 - ERROR - Error scraping Non_Existent_Topic (Attempt 1/3): Connection error
+2025-05-04 15:32:45,940 - ERROR - Error scraping Non_Existent_Topic (Attempt 2/3): Connection error
+2025-05-04 15:34:48,853 - INFO - Data saved successfully to dummy_path.txt
+2025-05-04 15:34:48,859 - INFO - Scraping topic: Topic_One
+2025-05-04 15:34:50,361 - INFO - Scraping topic: Topic_Two
+2025-05-04 15:34:51,865 - ERROR - Error scraping Non_Existent_Topic (Attempt 0/3): Connection error
+2025-05-04 15:34:53,868 - ERROR - Error scraping Non_Existent_Topic (Attempt 1/3): Connection error
+2025-05-04 15:34:55,871 - ERROR - Error scraping Non_Existent_Topic (Attempt 2/3): Connection error
+2025-05-04 15:35:53,265 - INFO - Data saved successfully to dummy_path.txt
+2025-05-04 15:35:53,273 - INFO - Scraping topic: Topic_One
+2025-05-04 15:35:54,775 - INFO - Scraping topic: Topic_Two
+2025-05-04 15:35:56,278 - ERROR - Error scraping Non_Existent_Topic (Attempt 0/3): Connection error
+2025-05-04 15:35:58,281 - ERROR - Error scraping Non_Existent_Topic (Attempt 1/3): Connection error
+2025-05-04 15:36:00,283 - ERROR - Error scraping Non_Existent_Topic (Attempt 2/3): Connection error

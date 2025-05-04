@@ -1,0 +1,90 @@
+2025-05-04 12:49:16,922 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:16,923 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:16,923 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:18,930 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:19,273 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:19,290 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:19,291 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:19,291 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:19,577 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:19,903 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:19,907 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:19,908 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:19,908 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:20,416 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:20,711 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:20,716 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:20,716 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:20,716 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:21,736 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:22,139 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:22,145 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:22,145 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:22,145 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:22,803 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:23,287 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:23,292 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:23,292 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:23,292 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:24,288 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:25,005 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:25,011 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:25,011 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:25,011 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:25,326 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:25,930 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:25,934 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:25,935 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:25,935 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:26,336 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:26,643 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:26,648 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:26,649 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:26,649 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:26,951 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:27,360 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 12:49:27,365 [INFO] Connected to Weaviate at http://mock-weaviate-url
+2025-05-04 12:49:27,366 [INFO] Use pytorch device_name: cpu
+2025-05-04 12:49:27,366 [INFO] Load pretrained SentenceTransformer: mock-model
+2025-05-04 12:49:27,667 [WARNING] No sentence-transformers model found with name sentence-transformers/mock-model. Creating a new one with mean pooling.
+2025-05-04 12:49:27,974 [ERROR] Error loading embedding model: sentence-transformers/mock-model is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-05-04 15:19:20,962 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:19:20,963 [INFO] Use pytorch device_name: cpu
+2025-05-04 15:19:20,963 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 15:19:57,643 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:19:57,644 [INFO] Old schema deleted (if any)
+2025-05-04 15:19:57,649 [INFO] Schema created with class: Documents
+2025-05-04 15:19:57,650 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:19:57,650 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:19:57,651 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-04 15:19:58,414 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:19:58,416 [INFO] Use pytorch device_name: cpu
+2025-05-04 15:19:58,416 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 15:19:58,417 [ERROR] Error loading embedding model: Expecting value: line 1 column 1 (char 0)
+2025-05-04 15:20:00,429 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:20:00,430 [INFO] Use pytorch device_name: cpu
+2025-05-04 15:20:00,430 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 15:22:48,868 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:22:48,868 [INFO] Text split into 3 chunks
+2025-05-04 15:27:56,116 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:27:56,116 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:27:56,117 [INFO] Old schema deleted (if any)
+2025-05-04 15:27:56,117 [INFO] Schema created with class: Documents
+2025-05-04 15:27:56,118 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:27:56,119 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:27:56,121 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-04 15:27:56,770 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:27:56,770 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:27:58,782 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-04 15:27:58,783 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-04 15:27:58,784 [INFO] Text split into 3 chunks

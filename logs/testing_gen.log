@@ -1,0 +1,28 @@
+2025-05-03 17:47:18,483 [INFO] Initializing RAGQuestionAnswering system
+2025-05-03 17:47:18,545 [INFO] Use pytorch device_name: cpu
+2025-05-03 17:47:18,545 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-03 17:47:21,934 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-03 17:47:21,935 [INFO] Starting RAG-based Q&A generation...
+2025-05-03 17:47:21,943 [INFO] Processing question: What is the time period referred to in the given historical text?
+2025-05-03 17:47:22,037 [INFO] Retrieved 3 context chunks from Weaviate.
+2025-05-03 17:47:53,265 [INFO] LLaMA responded successfully.
+2025-05-03 17:47:53,265 [INFO] Generated answer: The Vedic period, or the Vedic age (c. 1500 – c. 500 BCE).
+2025-05-03 17:47:53,278 [INFO] Processing question: When was the Vedic literature composed?
+2025-05-03 17:47:53,350 [INFO] Retrieved 3 context chunks from Weaviate.
+2025-05-03 17:48:12,820 [INFO] LLaMA responded successfully.
+2025-05-03 17:48:12,821 [INFO] Generated answer: The Vedic literature, including the Vedas, was composed between c. 1500–900 BCE.
+2025-05-03 17:48:12,831 [INFO] Processing question: What formed the basis of the influential Brahmanical ideology during the Vedic period?
+2025-05-03 17:48:12,928 [INFO] Retrieved 3 context chunks from Weaviate.
+2025-05-04 16:06:09,566 [INFO] Initializing RAGQuestionAnswering system
+2025-05-04 16:06:09,566 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-04 16:06:09,570 [INFO] Initializing RAGQuestionAnswering system
+2025-05-04 16:06:09,570 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-04 16:06:09,572 [INFO] Initializing RAGQuestionAnswering system
+2025-05-04 16:06:09,572 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-04 16:06:09,573 [INFO] LLaMA responded successfully.
+2025-05-04 16:06:09,574 [INFO] Initializing RAGQuestionAnswering system
+2025-05-04 16:06:09,575 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-04 16:06:09,578 [INFO] Loaded questions from dummy.csv
+2025-05-04 16:06:09,579 [INFO] Initializing RAGQuestionAnswering system
+2025-05-04 16:06:09,579 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-04 16:06:09,582 [INFO] Retrieved 1 context chunks from Weaviate.

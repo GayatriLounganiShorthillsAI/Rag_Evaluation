@@ -1,0 +1,46 @@
+2025-05-03 18:16:14,284 [INFO] Use pytorch device_name: cpu
+2025-05-03 18:16:14,285 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-03 18:16:21,166 [INFO] Using default tokenizer.
+2025-05-03 18:16:21,166 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-03 18:16:21,166 [INFO] Reading input Excel file: data/qa_with_predictions.xlsx
+2025-05-03 18:16:21,363 [INFO] Starting evaluation of predictions...
+2025-05-03 18:18:23,014 [INFO] Use pytorch device_name: cpu
+2025-05-03 18:18:23,014 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-03 18:18:32,731 [INFO] Using default tokenizer.
+2025-05-03 18:18:32,731 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-03 18:18:32,731 [INFO] Reading input Excel file: data/qa_with_predictions.xlsx
+2025-05-03 18:18:32,921 [INFO] Starting evaluation of predictions...
+2025-05-03 18:39:43,205 [INFO] Evaluation results saved to: qa.xlsx
+2025-05-03 18:39:43,206 [INFO] Summary saved to: qa.json
+2025-05-03 18:39:43,206 [INFO] Summary:
+{
+  "rouge_score": 0.6345329989426172,
+  "cosine_similarity": 0.9085520419096336,
+  "bert_score_f1": 0.7317154036576932,
+  "final_score": 0.8024500589584694,
+  "grade": "B (Good)"
+}
+2025-05-04 16:08:14,840 [INFO] Use pytorch device_name: cpu
+2025-05-04 16:08:14,841 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 16:08:21,748 [INFO] Using default tokenizer.
+2025-05-04 16:08:21,748 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-04 16:08:21,749 [INFO] Use pytorch device_name: cpu
+2025-05-04 16:08:21,750 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 16:08:25,658 [INFO] Using default tokenizer.
+2025-05-04 16:08:25,659 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-04 16:08:25,937 [INFO] Use pytorch device_name: cpu
+2025-05-04 16:08:25,937 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-04 16:08:28,678 [INFO] Using default tokenizer.
+2025-05-04 16:08:28,678 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-04 16:08:28,798 [INFO] Reading input Excel file: test_input.xlsx
+2025-05-04 16:08:28,808 [INFO] Starting evaluation of predictions...
+2025-05-04 16:08:28,822 [INFO] Evaluation results saved to: test_output.xlsx
+2025-05-04 16:08:28,823 [INFO] Summary saved to: test_summary.json
+2025-05-04 16:08:28,823 [INFO] Summary:
+{
+  "rouge_score": 0.6,
+  "cosine_similarity": 0.7,
+  "bert_score_f1": 0.9,
+  "final_score": 0.81,
+  "grade": "B (Good)"
+}
