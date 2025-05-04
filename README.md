@@ -1,4 +1,4 @@
-## RAG Q/A Chatbot
+# RAG Q/A Chatbot
 
 
 # Project Overview 
@@ -75,24 +75,162 @@ Runs the complete scraping process:
 ---
 
 
-# 2. Creating chunking and Embeddings of data and storing it into WEAVIATE 
+# 2. Text Chunking & Embedding Pipeline
 
+This module processes large text files by splitting them into chunks, embedding those chunks, and storing the results in a **Weaviate** vector database for efficient semantic retrieval.
+
+---
+
+## Features
+
+- Split scraped Wikipedia text into meaningful chunks.
+- Generate vector embeddings using **Sentence Transformers**.
+- Store the embeddings in **Weaviate** for fast and intelligent retrieval.
+
+---
+
+## Technologies Used
+
+- [Weaviate](https://localhost:8080/)
+- `langchain.text_splitter.RecursiveCharacterTextSplitter`
+- [sentence-transformers]
+
+---
+
+## Workflow
+
+1. **Load Text Files**  
+   Reads and processes `.txt` files from a designated folder.
+
+2. **Split Text into Chunks**  
+   Uses `RecursiveCharacterTextSplitter` to divide text into:
+   - Chunks of 800 characters
+   - With 100-character overlaps for better context retention
+
+3. **Embed Text Chunks**  
+   - Leverages **SentenceTransformer** to convert each chunk into vector embeddings.
+   - Prepares the data for insertion into the vector store.
+
+4. **Store in Weaviate**  
+   - Checks if the collection exists.
+   - Creates a new one if needed.
+   - Inserts embedded text chunks for retrieval.
+
+---
+
+## Key Functions
+
+### `load_text()`
+Reads all `.txt` files in the specified folder and loads their content.
+
+---
+
+### `split_text_semantic(text)`
+Uses `RecursiveCharacterTextSplitter` to break long text into manageable chunks:
+- Chunk size: 800 characters  
+- Overlap: 100 characters
+
+---
+
+### `insert_chunks(chunks)`
+Embeds the text chunks using SentenceTransformer and stores them in Weaviate.
+
+
+---
 
 
 # 3. RAG Bot
 
+## Purpose
+
+- Query stored text information using a chatbot powered by **Retrieval-Augmented Generation (RAG)**.
+- Retrieve relevant chunks from a vector database and generate coherent, contextual responses.
+
+---
+
+## Technologies Used
+
+- [Streamlit](https://streamlit.io/)
+- [Weaviate](https://localhost:8080/)
+- [Sentence Transformers]
+- [Ollama](https://ollama.com/) (for Llama 3)
+- Gemini (Google's LLM)
+
+---
+
+## Workflow
+
+1. **User Input**  
+   Accepts a user query from the Streamlit-based chatbot interface.
+
+2. **Query Weaviate**  
+   Converts the input into an embedding using SentenceTransformer.  
+   Performs a **vector similarity search** to fetch contextually relevant chunks.
+
+3. **Generate Response**  
+   - Constructs a prompt using the retrieved context.
+   - Sends the prompt to **Llama 3** via `LlamaQuerier.query()` or to **Gemini**.
+   - Displays the generated response in the Streamlit UI.
+
+---
+
+## Key Components
+
+- `streamlit` UI: Simple frontend for users to interact with the chatbot.
+- `model.encode(user_input)`: Embeds the query for similarity search.
+- `documents.query.near_vector()`: Retrieves top-k similar chunks from Weaviate.
+- `LlamaQuerier.query()`: Calls Llama 3 to generate a response.
+
+---
+
+## UI 
+![Rag UI Screenshot](./UI_screenshot.png)
 
 
 # 4. Evaluation
 
 
+## Feature
 
+- Automatically measure and analyze the **faithfulness**, **answer_relevancy** , **context_precision**, and **context_recall** of chatbot responses.
+- Compare generated answers to expected outputs using custom evaluation method.
 
+---
 
+## Technologies Used
 
+- [rouge-score](https://github.com/google/rouge) – ROUGE Score
+- [sentence-transformers](https://www.sbert.net/) – Semantic Similarity
+- BERT F1 Score
+- [Weaviate](https://localhost:8080/) – Vector search
+- [Ollama](https://ollama.com/) – Llama 3 integration
 
+---
 
-## Conclusion 
+## Workflow
+
+1. **Load Dataset**  
+   Reads a JSON file containing question-answer pairs as ground truth.
+
+2. **Retrieve Relevant Context**  
+   Uses Weaviate to perform vector similarity search and extract the most relevant chunks.
+
+3. **Generate Chatbot Response**  
+   Sends a prompt to Llama 3 (via Ollama) or Gemini to generate an answer based on the context.
+
+4. **Evaluate Metrics**  
+   Compares the generated answer to the expected one using multiple metrics:
+   - **ROUGE Score** – Measures precision and recall of overlapping text.
+   - **Semantic Similarity** – Cosine similarity between vector embeddings.
+   - **BERT F1** – Token-level overlap using BERT.
+   - **F1 Score** – Harmonic mean of precision and recall.
+
+5. **Store Evaluation Results**  
+   Logs metric values for performance comparison and tracking.
+
+---
+
+# Conclusion 
 This project successfully integrates web scraping, vector search, and LLM-based chatbot functionalities to provide an interactive knowledge retrieval system. By leveraging Weaviate for efficient storage and retrieval, along with an evaluation pipeline, the system ensures high-quality responses with measurable accuracy.
 
 
