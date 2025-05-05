@@ -1,0 +1,216 @@
+2025-05-05 16:31:14,443 [INFO] Testing TextLoader.load method
+2025-05-05 16:31:14,448 [INFO] TextLoader.load test completed
+2025-05-05 16:31:14,450 [INFO] Testing TextSplitter initialization
+2025-05-05 16:31:14,459 [INFO] Testing TextSplitter.split method
+2025-05-05 16:31:14,460 [INFO] TextSplitter.split test completed
+2025-05-05 16:31:14,461 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:31:14,461 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:31:14,464 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:31:14,465 [INFO] LLaMAClient.query test completed
+2025-05-05 16:31:14,467 [INFO] Testing QAGenerator initialization
+2025-05-05 16:31:14,467 [INFO] QAGenerator initialization test completed
+2025-05-05 16:31:14,469 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:31:14,469 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:31:14,471 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:31:14,873 [INFO] QAGenerator.generate test completed
+2025-05-05 16:31:14,875 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:31:14,876 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:31:14,877 [INFO] Testing main execution flow
+2025-05-05 16:35:23,888 [INFO] Testing TextLoader.load method
+2025-05-05 16:35:23,892 [INFO] TextLoader.load test completed
+2025-05-05 16:35:23,893 [INFO] Testing TextSplitter initialization
+2025-05-05 16:35:23,894 [INFO] TextSplitter initialization test completed
+2025-05-05 16:35:23,896 [INFO] Testing TextSplitter.split method
+2025-05-05 16:35:23,897 [INFO] TextSplitter.split test completed
+2025-05-05 16:35:23,899 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:35:23,900 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:35:23,902 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:35:23,903 [INFO] LLaMAClient.query test completed
+2025-05-05 16:35:23,904 [INFO] Testing QAGenerator initialization
+2025-05-05 16:35:23,904 [INFO] QAGenerator initialization test completed
+2025-05-05 16:35:23,906 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:35:23,907 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:35:23,908 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:35:24,311 [INFO] QAGenerator.generate test completed
+2025-05-05 16:35:24,313 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:35:24,316 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:35:24,317 [INFO] Testing main execution flow
+2025-05-05 16:44:50,348 [INFO] Testing TextLoader.load method
+2025-05-05 16:44:50,353 [INFO] TextLoader.load test completed
+2025-05-05 16:44:50,354 [INFO] Testing TextSplitter initialization
+2025-05-05 16:44:50,355 [INFO] TextSplitter initialization test completed
+2025-05-05 16:44:50,356 [INFO] Testing TextSplitter.split method
+2025-05-05 16:44:50,357 [INFO] TextSplitter.split test completed
+2025-05-05 16:44:50,358 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:44:50,359 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:44:50,361 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:44:50,362 [INFO] LLaMAClient.query test completed
+2025-05-05 16:44:50,363 [INFO] Testing QAGenerator initialization
+2025-05-05 16:44:50,364 [INFO] QAGenerator initialization test completed
+2025-05-05 16:44:50,365 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:44:50,366 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:44:50,367 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:44:50,771 [INFO] QAGenerator.generate test completed
+2025-05-05 16:44:50,773 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:44:50,774 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:44:50,776 [INFO] Testing main execution flow
+2025-05-05 16:48:54,401 [INFO] Testing TextLoader.load method
+2025-05-05 16:48:54,405 [INFO] TextLoader.load test completed
+2025-05-05 16:48:54,407 [INFO] Testing TextSplitter initialization
+2025-05-05 16:48:54,408 [INFO] TextSplitter initialization test completed
+2025-05-05 16:48:54,409 [INFO] Testing TextSplitter.split method
+2025-05-05 16:48:54,410 [INFO] TextSplitter.split test completed
+2025-05-05 16:48:54,412 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:48:54,412 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:48:54,415 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:48:54,416 [INFO] LLaMAClient.query test completed
+2025-05-05 16:48:54,418 [INFO] Testing QAGenerator initialization
+2025-05-05 16:48:54,418 [INFO] QAGenerator initialization test completed
+2025-05-05 16:48:54,420 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:48:54,420 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:48:54,421 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:48:54,825 [INFO] QAGenerator.generate test completed
+2025-05-05 16:48:54,827 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:48:54,829 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:48:54,830 [INFO] Testing main execution flow
+2025-05-05 16:48:54,833 [INFO] Main execution flow test completed
+2025-05-05 16:49:49,380 [INFO] Testing TextLoader.load method
+2025-05-05 16:49:49,386 [INFO] TextLoader.load test completed
+2025-05-05 16:49:49,387 [INFO] Testing TextSplitter initialization
+2025-05-05 16:49:49,388 [INFO] TextSplitter initialization test completed
+2025-05-05 16:49:49,389 [INFO] Testing TextSplitter.split method
+2025-05-05 16:49:49,390 [INFO] TextSplitter.split test completed
+2025-05-05 16:49:49,391 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:49:49,392 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:49:49,394 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:49:49,395 [INFO] LLaMAClient.query test completed
+2025-05-05 16:49:49,396 [INFO] Testing QAGenerator initialization
+2025-05-05 16:49:49,396 [INFO] QAGenerator initialization test completed
+2025-05-05 16:49:49,399 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:49:49,399 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:49:49,401 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:49:49,804 [INFO] QAGenerator.generate test completed
+2025-05-05 16:49:49,806 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:49:49,807 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:49:49,809 [INFO] Testing main execution flow
+2025-05-05 16:49:49,812 [INFO] Main execution flow test completed
+2025-05-05 16:51:07,170 [INFO] Testing TextLoader.load method
+2025-05-05 16:51:07,174 [INFO] TextLoader.load test completed
+2025-05-05 16:51:07,175 [INFO] Testing TextSplitter initialization
+2025-05-05 16:51:07,176 [INFO] TextSplitter initialization test completed
+2025-05-05 16:51:07,177 [INFO] Testing TextSplitter.split method
+2025-05-05 16:51:07,178 [INFO] TextSplitter.split test completed
+2025-05-05 16:51:07,179 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:51:07,179 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:51:07,181 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:51:07,181 [INFO] LLaMAClient.query test completed
+2025-05-05 16:51:07,183 [INFO] Testing QAGenerator initialization
+2025-05-05 16:51:07,183 [INFO] QAGenerator initialization test completed
+2025-05-05 16:51:07,184 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:51:07,185 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:51:07,186 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:51:07,590 [INFO] QAGenerator.generate test completed
+2025-05-05 16:51:07,591 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:51:07,592 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:51:07,594 [INFO] Testing main execution flow
+2025-05-05 16:51:07,597 [INFO] Main execution flow test completed
+2025-05-05 16:52:40,323 [INFO] Testing TextLoader.load method
+2025-05-05 16:52:40,328 [INFO] TextLoader.load test completed
+2025-05-05 16:52:40,330 [INFO] Testing TextSplitter initialization
+2025-05-05 16:52:40,330 [INFO] TextSplitter initialization test completed
+2025-05-05 16:52:40,332 [INFO] Testing TextSplitter.split method
+2025-05-05 16:52:40,332 [INFO] TextSplitter.split test completed
+2025-05-05 16:52:40,333 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:52:40,334 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:52:40,336 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:52:40,337 [INFO] LLaMAClient.query test completed
+2025-05-05 16:52:40,338 [INFO] Testing QAGenerator initialization
+2025-05-05 16:52:40,338 [INFO] QAGenerator initialization test completed
+2025-05-05 16:52:40,340 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:52:40,340 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:52:40,342 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:52:40,745 [INFO] QAGenerator.generate test completed
+2025-05-05 16:52:40,747 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:52:40,748 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:52:40,749 [INFO] Testing main execution flow
+2025-05-05 16:52:40,752 [INFO] Main execution flow test completed
+2025-05-05 16:53:27,684 [INFO] Testing TextLoader.load method
+2025-05-05 16:53:27,689 [INFO] TextLoader.load test completed
+2025-05-05 16:53:27,691 [INFO] Testing TextSplitter initialization
+2025-05-05 16:53:27,691 [INFO] TextSplitter initialization test completed
+2025-05-05 16:53:27,693 [INFO] Testing TextSplitter.split method
+2025-05-05 16:53:27,694 [INFO] TextSplitter.split test completed
+2025-05-05 16:53:27,696 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:53:27,696 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:53:27,698 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:53:27,699 [INFO] LLaMAClient.query test completed
+2025-05-05 16:53:27,701 [INFO] Testing QAGenerator initialization
+2025-05-05 16:53:27,702 [INFO] QAGenerator initialization test completed
+2025-05-05 16:53:27,703 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:53:27,704 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:53:27,706 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:53:28,110 [INFO] QAGenerator.generate test completed
+2025-05-05 16:53:28,111 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:53:28,113 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:53:28,114 [INFO] Testing main execution flow
+2025-05-05 16:53:28,117 [INFO] Main execution flow test completed
+2025-05-05 16:54:09,893 [INFO] Testing TextLoader.load method
+2025-05-05 16:54:09,897 [INFO] TextLoader.load test completed
+2025-05-05 16:54:09,898 [INFO] Testing TextSplitter initialization
+2025-05-05 16:54:09,900 [INFO] TextSplitter initialization test completed
+2025-05-05 16:54:09,901 [INFO] Testing TextSplitter.split method
+2025-05-05 16:54:09,902 [INFO] TextSplitter.split test completed
+2025-05-05 16:54:09,904 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:54:09,905 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:54:09,908 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:54:09,909 [INFO] LLaMAClient.query test completed
+2025-05-05 16:54:09,911 [INFO] Testing QAGenerator initialization
+2025-05-05 16:54:09,911 [INFO] QAGenerator initialization test completed
+2025-05-05 16:54:09,912 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:54:09,913 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:54:09,914 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:54:10,318 [INFO] QAGenerator.generate test completed
+2025-05-05 16:54:10,320 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:54:10,322 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:54:10,323 [INFO] Testing main execution flow
+2025-05-05 16:54:10,327 [INFO] Main execution flow test completed
+2025-05-05 17:01:48,847 [INFO] Testing TextLoader.load method
+2025-05-05 17:01:48,854 [INFO] TextLoader.load test completed
+2025-05-05 17:01:48,857 [INFO] Testing TextSplitter initialization
+2025-05-05 17:01:48,857 [INFO] TextSplitter initialization test completed
+2025-05-05 17:01:48,859 [INFO] Testing TextSplitter.split method
+2025-05-05 17:01:48,861 [INFO] TextSplitter.split test completed
+2025-05-05 17:01:48,862 [INFO] Testing LLaMAClient initialization
+2025-05-05 17:01:48,862 [INFO] LLaMAClient initialization test completed
+2025-05-05 17:01:48,865 [INFO] Testing LLaMAClient.query method
+2025-05-05 17:01:48,866 [INFO] LLaMAClient.query test completed
+2025-05-05 17:01:48,867 [INFO] Testing QAGenerator initialization
+2025-05-05 17:01:48,868 [INFO] QAGenerator initialization test completed
+2025-05-05 17:01:48,869 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 17:01:48,869 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 17:01:48,871 [INFO] Testing QAGenerator.generate method
+2025-05-05 17:01:49,275 [INFO] QAGenerator.generate test completed
+2025-05-05 17:01:49,277 [INFO] Testing DataSaver.to_csv method
+2025-05-05 17:01:49,278 [INFO] DataSaver.to_csv test completed
+2025-05-05 17:01:49,279 [INFO] Testing main execution flow
+2025-05-05 17:01:49,283 [INFO] Main execution flow test completed
+2025-05-05 17:10:18,804 [INFO] Testing TextLoader.load method
+2025-05-05 17:10:18,808 [INFO] TextLoader.load test completed
+2025-05-05 17:10:18,810 [INFO] Testing TextSplitter initialization
+2025-05-05 17:10:18,812 [INFO] TextSplitter initialization test completed
+2025-05-05 17:10:18,813 [INFO] Testing TextSplitter.split method
+2025-05-05 17:10:18,814 [INFO] TextSplitter.split test completed
+2025-05-05 17:10:18,815 [INFO] Testing LLaMAClient initialization
+2025-05-05 17:10:18,815 [INFO] LLaMAClient initialization test completed
+2025-05-05 17:10:18,817 [INFO] Testing LLaMAClient.query method
+2025-05-05 17:10:18,818 [INFO] LLaMAClient.query test completed
+2025-05-05 17:10:18,820 [INFO] Testing QAGenerator initialization
+2025-05-05 17:10:18,820 [INFO] QAGenerator initialization test completed
+2025-05-05 17:10:18,822 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 17:10:18,822 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 17:10:18,823 [INFO] Testing QAGenerator.generate method
+2025-05-05 17:10:19,227 [INFO] QAGenerator.generate test completed
+2025-05-05 17:10:19,228 [INFO] Testing DataSaver.to_csv method
+2025-05-05 17:10:19,229 [INFO] DataSaver.to_csv test completed
+2025-05-05 17:10:19,231 [INFO] Testing main execution flow
+2025-05-05 17:10:19,234 [INFO] Main execution flow test completed

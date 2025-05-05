@@ -141,3 +141,21 @@
 2025-05-04 12:40:01,447 [WARNING] Could not load JSON file data/history.json: Expecting value: line 1 column 1 (char 0)
 2025-05-04 12:40:01,448 [WARNING] No chunks to rerank.
 2025-05-04 12:40:01,449 [ERROR] Error initializing WeaviateRetriever: Connection Error
+2025-05-05 15:45:48,070 [INFO] Use pytorch device_name: cpu
+2025-05-05 15:45:48,070 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-05 15:45:55,352 [INFO] Use pytorch device: cpu
+2025-05-05 15:45:56,820 [INFO] Use pytorch device_name: cpu
+2025-05-05 15:45:56,820 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-05 15:45:57,035 [INFO] Use pytorch device_name: cpu
+2025-05-05 15:45:57,036 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-05 15:46:03,684 [INFO] Use pytorch device: cpu
+2025-05-05 15:46:04,012 [INFO] Use pytorch device: cpu
+2025-05-05 15:46:43,714 [INFO] Use pytorch device_name: cpu
+2025-05-05 15:46:43,714 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-05 15:46:50,596 [INFO] Use pytorch device: cpu
+2025-05-05 15:46:58,647 [INFO] Use pytorch device_name: cpu
+2025-05-05 15:46:58,648 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-05 15:47:04,746 [INFO] Use pytorch device: cpu
+2025-05-05 15:48:54,514 [INFO] Use pytorch device_name: cpu
+2025-05-05 15:48:54,514 [INFO] Load pretrained SentenceTransformer: intfloat/e5-base-v2
+2025-05-05 15:49:00,462 [INFO] Use pytorch device: cpu

@@ -1,0 +1,2522 @@
+2025-05-05 16:31:13,920 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:31:13,921 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:31:13,921 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:31:13,932 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:31:13,933 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:31:13,936 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:31:13,938 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:31:13,942 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:31:13,945 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:31:13,946 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:31:13,947 [ERROR] Error at index 0: API Error
+2025-05-05 16:31:13,947 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:31:13,947 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:31:13,953 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:31:13,960 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:31:13,961 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:31:13,961 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:31:13,965 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:31:13,970 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:31:13,971 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:31:13,997 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:31:13,999 [INFO] Resuming from index 0
+2025-05-05 16:31:14,001 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:31:14,003 [INFO] Resuming from index 2
+2025-05-05 16:31:14,009 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:31:14,009 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:31:14,014 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:31:14,014 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,068 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:31:14,068 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,077 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:31:14,077 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,087 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:31:14,088 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,088 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:31:14,093 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:31:14,094 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,108 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:31:14,108 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,108 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:31:14,113 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:31:14,113 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:31:14,118 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:31:14,118 [INFO] Starting evaluation of predictions...
+2025-05-05 16:31:14,121 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:31:14,122 [INFO] Summary saved to: summary.json
+2025-05-05 16:31:14,122 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:31:14,155 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:31:14,155 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:31:14,155 [INFO] Loaded embedding model: test-model
+2025-05-05 16:31:14,337 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:31:14,337 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:31:14,338 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:31:14,341 [ERROR] Text file not found: test.txt
+2025-05-05 16:31:14,342 [ERROR] Failed to read file: File error
+2025-05-05 16:31:14,342 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:31:14,345 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:31:14,345 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:31:14,345 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:31:14,345 [INFO] Text split into 3 chunks
+2025-05-05 16:31:14,358 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:31:14,358 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:31:14,358 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:31:14,359 [INFO] Old schema deleted (if any)
+2025-05-05 16:31:14,360 [INFO] Schema created with class: TestClass
+2025-05-05 16:31:14,360 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:31:14,360 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:31:14,363 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:31:14,363 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:31:14,363 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:31:14,364 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:31:14,374 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:31:14,375 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:31:14,375 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:31:14,375 [INFO]  Starting upload process...
+2025-05-05 16:31:14,376 [INFO]  Upload completed successfully!
+2025-05-05 16:31:14,376 [INFO]  Starting upload process...
+2025-05-05 16:31:14,376 [ERROR]  Process failed: Process error
+2025-05-05 16:31:14,376 [INFO] ChunkUploader.run test completed
+2025-05-05 16:31:14,380 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:31:14,391 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:31:14,393 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:31:14,393 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:31:14,395 [INFO] Testing Reranker initialization
+2025-05-05 16:31:14,404 [INFO] Testing Reranker.rerank method
+2025-05-05 16:31:14,405 [WARNING] No chunks to rerank.
+2025-05-05 16:31:14,405 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:31:14,405 [INFO] Reranker.rerank test completed
+2025-05-05 16:31:14,407 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:31:14,407 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:31:14,410 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:31:14,411 [ERROR] Failed to query model: Request error
+2025-05-05 16:31:14,411 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:31:14,416 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:31:14,417 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:31:14,428 [INFO] Testing QAApp.save_history method
+2025-05-05 16:31:14,429 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:31:14,429 [ERROR] Failed to save JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:31:14,441 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:31:14,441 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:31:14,441 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:31:14,443 [INFO] Testing TextLoader.load method
+2025-05-05 16:31:14,447 [INFO] Loaded text from test.txt
+2025-05-05 16:31:14,448 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:31:14,448 [INFO] TextLoader.load test completed
+2025-05-05 16:31:14,450 [INFO] Testing TextSplitter initialization
+2025-05-05 16:31:14,459 [INFO] Testing TextSplitter.split method
+2025-05-05 16:31:14,459 [INFO] Split text into 3 chunks
+2025-05-05 16:31:14,459 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:31:14,460 [INFO] TextSplitter.split test completed
+2025-05-05 16:31:14,461 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:31:14,461 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:31:14,461 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:31:14,464 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:31:14,464 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:31:14,465 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:31:14,465 [INFO] LLaMAClient.query test completed
+2025-05-05 16:31:14,467 [INFO] Testing QAGenerator initialization
+2025-05-05 16:31:14,467 [INFO] QAGenerator initialization test completed
+2025-05-05 16:31:14,469 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:31:14,469 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:31:14,471 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:31:14,472 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:31:14,873 [INFO] Q&A generation complete
+2025-05-05 16:31:14,873 [INFO] QAGenerator.generate test completed
+2025-05-05 16:31:14,875 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:31:14,876 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:31:14,876 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:31:14,876 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:31:14,877 [INFO] Testing main execution flow
+2025-05-05 16:31:14,888 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:31:14,889 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:31:14,890 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:31:14,890 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:31:14,892 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:31:14,893 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:31:14,893 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:31:14,893 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:31:14,893 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:31:14,894 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:31:14,894 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:31:14,894 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:31:16,896 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:31:18,898 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:31:20,901 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:31:20,903 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:31:20,907 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:31:20,907 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:31:20,907 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:31:20,910 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:31:20,911 [INFO] Scraping topic: Topic1
+2025-05-05 16:31:22,413 [INFO] Scraping topic: Topic2
+2025-05-05 16:31:23,916 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:31:23,919 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:31:23,919 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,919 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,920 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,920 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,928 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:31:23,930 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,930 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,933 [INFO] Retrieved 0 context chunks from Weaviate.
+2025-05-05 16:31:23,943 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:31:23,943 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,943 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,944 [INFO] LLaMA responded successfully.
+2025-05-05 16:31:23,944 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:31:23,944 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:31:23,948 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:31:23,952 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,952 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,952 [INFO] Loaded questions from test.csv
+2025-05-05 16:31:23,953 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,953 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,953 [ERROR] Error reading CSV file: File error
+2025-05-05 16:31:23,953 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:31:23,958 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:31:23,959 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,960 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,961 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,961 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,962 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:31:23,966 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:31:23,966 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:31:23,967 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:31:23,968 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:31:23,968 [INFO] Processing question: Test question 1
+2025-05-05 16:31:23,968 [INFO] Generated answer: Predicted answer
+2025-05-05 16:31:23,969 [INFO] Processing question: Test question 2
+2025-05-05 16:31:23,969 [INFO] Generated answer: Predicted answer
+2025-05-05 16:31:23,969 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:31:23,969 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:35:23,261 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:35:23,266 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:35:23,267 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:35:23,276 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:35:23,277 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:35:23,280 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:35:23,282 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:35:23,286 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:35:23,288 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:35:23,288 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:35:23,289 [ERROR] Error at index 0: API Error
+2025-05-05 16:35:23,289 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:35:23,289 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:35:23,293 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:35:23,296 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:35:23,297 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:35:23,298 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:35:23,302 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:35:23,306 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:35:23,308 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:35:23,312 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:35:23,313 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:35:23,317 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:35:23,319 [INFO] Resuming from index 0
+2025-05-05 16:35:23,321 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:35:23,323 [INFO] Resuming from index 2
+2025-05-05 16:35:23,328 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:35:23,328 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:35:23,332 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:35:23,333 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,333 [INFO] QAEvaluator initialization test completed
+2025-05-05 16:35:23,335 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:35:23,336 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,336 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:35:23,339 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:35:23,339 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,339 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:35:23,342 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:35:23,343 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,343 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:35:23,347 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:35:23,349 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,350 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:35:23,353 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:35:23,354 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,354 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:35:23,358 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:35:23,358 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:35:23,361 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:35:23,362 [INFO] Starting evaluation of predictions...
+2025-05-05 16:35:23,364 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:35:23,365 [INFO] Summary saved to: summary.json
+2025-05-05 16:35:23,366 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:35:23,384 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:35:23,384 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:35:23,384 [INFO] Loaded embedding model: test-model
+2025-05-05 16:35:23,385 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:35:23,385 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:35:23,385 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:35:23,385 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:35:23,388 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:35:23,388 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:35:23,388 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:35:23,392 [ERROR] Text file not found: test.txt
+2025-05-05 16:35:23,393 [ERROR] Failed to read file: File error
+2025-05-05 16:35:23,393 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:35:23,395 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:35:23,396 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:35:23,396 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:35:23,397 [INFO] Text split into 3 chunks
+2025-05-05 16:35:23,397 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:35:23,401 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:35:23,401 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:35:23,401 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:35:23,401 [INFO] Old schema deleted (if any)
+2025-05-05 16:35:23,402 [INFO] Schema created with class: TestClass
+2025-05-05 16:35:23,545 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:35:23,545 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:35:23,545 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:35:23,546 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:35:23,547 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:35:23,547 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:35:23,547 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:35:23,548 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:35:23,550 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:35:23,551 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:35:23,551 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:35:23,552 [INFO]  Starting upload process...
+2025-05-05 16:35:23,552 [INFO]  Upload completed successfully!
+2025-05-05 16:35:23,552 [INFO]  Starting upload process...
+2025-05-05 16:35:23,552 [ERROR]  Process failed: Process error
+2025-05-05 16:35:23,552 [INFO] ChunkUploader.run test completed
+2025-05-05 16:35:23,555 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:35:23,556 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:35:23,556 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:35:23,558 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:35:23,567 [INFO] Testing Reranker initialization
+2025-05-05 16:35:23,568 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:35:23,568 [INFO] Reranker initialization test completed
+2025-05-05 16:35:23,570 [INFO] Testing Reranker.rerank method
+2025-05-05 16:35:23,578 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:35:23,579 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:35:23,582 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:35:23,583 [ERROR] Failed to query model: Request error
+2025-05-05 16:35:23,583 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:35:23,587 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:35:23,588 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:35:23,588 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:35:23,592 [INFO] Testing QAApp.save_history method
+2025-05-05 16:35:23,592 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:35:23,886 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:35:23,886 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:35:23,886 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:35:23,888 [INFO] Testing TextLoader.load method
+2025-05-05 16:35:23,891 [INFO] Loaded text from test.txt
+2025-05-05 16:35:23,892 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:35:23,892 [INFO] TextLoader.load test completed
+2025-05-05 16:35:23,893 [INFO] Testing TextSplitter initialization
+2025-05-05 16:35:23,894 [INFO] TextSplitter initialization test completed
+2025-05-05 16:35:23,896 [INFO] Testing TextSplitter.split method
+2025-05-05 16:35:23,897 [INFO] Split text into 3 chunks
+2025-05-05 16:35:23,897 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:35:23,897 [INFO] TextSplitter.split test completed
+2025-05-05 16:35:23,899 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:35:23,900 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:35:23,900 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:35:23,902 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:35:23,902 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:35:23,903 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:35:23,903 [INFO] LLaMAClient.query test completed
+2025-05-05 16:35:23,904 [INFO] Testing QAGenerator initialization
+2025-05-05 16:35:23,904 [INFO] QAGenerator initialization test completed
+2025-05-05 16:35:23,906 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:35:23,907 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:35:23,908 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:35:23,909 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:35:24,310 [INFO] Q&A generation complete
+2025-05-05 16:35:24,311 [INFO] QAGenerator.generate test completed
+2025-05-05 16:35:24,313 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:35:24,315 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:35:24,316 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:35:24,316 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:35:24,317 [INFO] Testing main execution flow
+2025-05-05 16:35:24,524 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:35:24,524 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:35:24,525 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:35:24,525 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:35:24,527 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:35:24,528 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:35:24,529 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:35:24,529 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:35:24,529 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:35:24,529 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:35:24,529 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:35:24,529 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:35:26,532 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:35:28,534 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:35:30,537 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:35:30,540 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:35:30,544 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:35:30,545 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:35:30,545 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:35:30,547 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:35:30,548 [INFO] Scraping topic: Topic1
+2025-05-05 16:35:32,050 [INFO] Scraping topic: Topic2
+2025-05-05 16:35:33,554 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:35:33,557 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:35:33,557 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,557 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,558 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,558 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:35:33,558 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:35:33,560 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:35:33,561 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,562 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,564 [INFO] Retrieved 0 context chunks from Weaviate.
+2025-05-05 16:35:33,574 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:35:33,574 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,575 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,575 [INFO] LLaMA responded successfully.
+2025-05-05 16:35:33,575 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:35:33,575 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:35:33,578 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:35:33,581 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,582 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,582 [INFO] Loaded questions from test.csv
+2025-05-05 16:35:33,583 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,583 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,583 [ERROR] Error reading CSV file: File error
+2025-05-05 16:35:33,583 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:35:33,585 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:35:33,587 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,587 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,589 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,589 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,590 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:35:33,593 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:35:33,594 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:35:33,594 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:35:33,596 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:35:33,596 [INFO] Processing question: Test question 1
+2025-05-05 16:35:33,596 [INFO] Generated answer: Predicted answer
+2025-05-05 16:35:33,597 [INFO] Processing question: Test question 2
+2025-05-05 16:35:33,597 [INFO] Generated answer: Predicted answer
+2025-05-05 16:35:33,597 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:35:33,597 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:41:17,941 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:41:17,941 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:41:17,942 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:41:17,942 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:41:17,944 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:41:17,945 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:41:17,945 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:41:17,945 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:41:17,945 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:41:17,946 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:41:17,946 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:41:17,946 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:41:19,949 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:41:21,952 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:41:23,955 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:41:23,957 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:41:23,964 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:41:23,965 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:41:23,965 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:41:23,968 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:41:23,972 [INFO] Scraping topic: Topic1
+2025-05-05 16:41:25,475 [INFO] Scraping topic: Topic2
+2025-05-05 16:41:26,978 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:44:49,442 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:44:49,443 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:44:49,444 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:44:49,453 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:44:49,454 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:44:49,456 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:44:49,457 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:44:49,460 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:44:49,462 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:44:49,463 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:44:49,463 [ERROR] Error at index 0: API Error
+2025-05-05 16:44:49,463 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:44:49,463 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:44:49,467 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:44:49,470 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:44:49,471 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:44:49,471 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:44:49,474 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:44:49,479 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:44:49,480 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:44:49,485 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:44:49,485 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:44:49,490 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:44:49,492 [INFO] Resuming from index 0
+2025-05-05 16:44:49,493 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:44:49,495 [INFO] Resuming from index 2
+2025-05-05 16:44:49,499 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:44:49,500 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:44:50,141 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:44:50,141 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:44:50,141 [INFO] Loaded embedding model: test-model
+2025-05-05 16:44:50,142 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:44:50,142 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:44:50,142 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:44:50,142 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:44:50,145 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:44:50,146 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:44:50,146 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:44:50,149 [ERROR] Text file not found: test.txt
+2025-05-05 16:44:50,150 [ERROR] Failed to read file: File error
+2025-05-05 16:44:50,150 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:44:50,153 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:44:50,154 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:44:50,154 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:44:50,154 [INFO] Text split into 3 chunks
+2025-05-05 16:44:50,154 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:44:50,158 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:44:50,158 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:44:50,158 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:44:50,159 [INFO] Old schema deleted (if any)
+2025-05-05 16:44:50,159 [INFO] Schema created with class: TestClass
+2025-05-05 16:44:50,159 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:44:50,159 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:44:50,163 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:44:50,163 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:44:50,164 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:44:50,164 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:44:50,165 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:44:50,165 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:44:50,165 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:44:50,165 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:44:50,169 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:44:50,170 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:44:50,170 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:44:50,171 [INFO]  Starting upload process...
+2025-05-05 16:44:50,171 [INFO]  Upload completed successfully!
+2025-05-05 16:44:50,172 [INFO]  Starting upload process...
+2025-05-05 16:44:50,172 [ERROR]  Process failed: Process error
+2025-05-05 16:44:50,172 [INFO] ChunkUploader.run test completed
+2025-05-05 16:44:50,175 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:44:50,176 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:44:50,176 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:44:50,179 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:44:50,181 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:44:50,181 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:44:50,183 [INFO] Testing Reranker initialization
+2025-05-05 16:44:50,183 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:44:50,184 [INFO] Reranker initialization test completed
+2025-05-05 16:44:50,186 [INFO] Testing Reranker.rerank method
+2025-05-05 16:44:50,186 [WARNING] No chunks to rerank.
+2025-05-05 16:44:50,186 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:44:50,186 [INFO] Reranker.rerank test completed
+2025-05-05 16:44:50,188 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:44:50,188 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:44:50,191 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:44:50,192 [ERROR] Failed to query model: Request error
+2025-05-05 16:44:50,192 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:44:50,197 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:44:50,198 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:44:50,199 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:44:50,203 [INFO] Testing QAApp.save_history method
+2025-05-05 16:44:50,203 [WARNING] Could not load JSON file data/history.json: [Errno 2] No such file or directory: 'data/history.json'
+2025-05-05 16:44:50,346 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:44:50,347 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:44:50,348 [INFO] Testing TextLoader.load method
+2025-05-05 16:44:50,352 [INFO] Loaded text from test.txt
+2025-05-05 16:44:50,353 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:44:50,353 [INFO] TextLoader.load test completed
+2025-05-05 16:44:50,354 [INFO] Testing TextSplitter initialization
+2025-05-05 16:44:50,355 [INFO] TextSplitter initialization test completed
+2025-05-05 16:44:50,356 [INFO] Testing TextSplitter.split method
+2025-05-05 16:44:50,357 [INFO] Split text into 3 chunks
+2025-05-05 16:44:50,357 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:44:50,357 [INFO] TextSplitter.split test completed
+2025-05-05 16:44:50,358 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:44:50,359 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:44:50,359 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:44:50,361 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:44:50,361 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:44:50,362 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:44:50,362 [INFO] LLaMAClient.query test completed
+2025-05-05 16:44:50,363 [INFO] Testing QAGenerator initialization
+2025-05-05 16:44:50,364 [INFO] QAGenerator initialization test completed
+2025-05-05 16:44:50,365 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:44:50,366 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:44:50,367 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:44:50,368 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:44:50,769 [INFO] Q&A generation complete
+2025-05-05 16:44:50,771 [INFO] QAGenerator.generate test completed
+2025-05-05 16:44:50,773 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:44:50,774 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:44:50,774 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:44:50,774 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:44:50,776 [INFO] Testing main execution flow
+2025-05-05 16:44:51,515 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:44:51,516 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:44:51,517 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:44:51,517 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:44:51,521 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:44:51,523 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:44:51,523 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:44:51,523 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:44:51,524 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:44:51,524 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:44:51,524 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:44:51,525 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:44:53,527 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:44:55,530 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:44:57,533 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:44:57,536 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:44:57,540 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:44:57,540 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:44:57,540 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:44:57,544 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:44:57,545 [INFO] Scraping topic: Topic1
+2025-05-05 16:44:59,048 [INFO] Scraping topic: Topic2
+2025-05-05 16:45:00,552 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:45:00,555 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:45:00,555 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,555 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,556 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,556 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:45:00,556 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:45:00,559 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:45:00,559 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,560 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,564 [INFO] Retrieved 0 context chunks from Weaviate.
+2025-05-05 16:45:00,575 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:45:00,575 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,575 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,575 [INFO] LLaMA responded successfully.
+2025-05-05 16:45:00,576 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:45:00,576 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:45:00,579 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:45:00,582 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,583 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,583 [INFO] Loaded questions from test.csv
+2025-05-05 16:45:00,583 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,583 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,584 [ERROR] Error reading CSV file: File error
+2025-05-05 16:45:00,584 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:45:00,587 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:45:00,588 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,588 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,591 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,591 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,592 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:45:00,597 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:45:00,598 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:45:00,598 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:45:00,600 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:45:00,600 [INFO] Processing question: Test question 1
+2025-05-05 16:45:00,601 [INFO] Generated answer: Predicted answer
+2025-05-05 16:45:00,601 [INFO] Processing question: Test question 2
+2025-05-05 16:45:00,602 [INFO] Generated answer: Predicted answer
+2025-05-05 16:45:00,602 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:45:00,602 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:48:53,968 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:48:53,969 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:48:53,970 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:48:53,980 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:48:53,980 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:48:53,983 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:48:53,984 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:48:53,988 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:48:53,991 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:48:53,991 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:48:53,992 [ERROR] Error at index 0: API Error
+2025-05-05 16:48:53,992 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:48:53,992 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:48:53,996 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:48:53,999 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:48:54,000 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:48:54,000 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:48:54,004 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:48:54,008 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:48:54,010 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:48:54,016 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:48:54,016 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:48:54,020 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:48:54,022 [INFO] Resuming from index 0
+2025-05-05 16:48:54,023 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:48:54,026 [INFO] Resuming from index 2
+2025-05-05 16:48:54,031 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:48:54,031 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:48:54,034 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:48:54,035 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,085 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:48:54,085 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,085 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:48:54,088 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:48:54,088 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,089 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:48:54,092 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:48:54,093 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,093 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:48:54,097 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:48:54,098 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,098 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:48:54,101 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:48:54,101 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,102 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:48:54,105 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:48:54,105 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:48:54,110 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:48:54,111 [INFO] Starting evaluation of predictions...
+2025-05-05 16:48:54,113 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:48:54,114 [INFO] Summary saved to: summary.json
+2025-05-05 16:48:54,114 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:48:54,115 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:48:54,115 [ERROR] Excel file missing required columns: {'Question', 'Answer', 'Predicted_Answer'}
+2025-05-05 16:48:54,139 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:48:54,140 [INFO] Starting evaluation of predictions...
+2025-05-05 16:48:54,142 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:48:54,143 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:48:54,146 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:48:54,148 [INFO] Summary saved to: summary.json
+2025-05-05 16:48:54,148 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:48:54,148 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 16:48:54,155 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:48:54,155 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:48:54,155 [INFO] Loaded embedding model: test-model
+2025-05-05 16:48:54,157 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:48:54,158 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:48:54,158 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:48:54,158 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:48:54,164 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:48:54,164 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:48:54,164 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:48:54,174 [ERROR] Text file not found: test.txt
+2025-05-05 16:48:54,175 [ERROR] Failed to read file: File error
+2025-05-05 16:48:54,175 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:48:54,181 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:48:54,181 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:48:54,181 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:48:54,183 [INFO] Text split into 3 chunks
+2025-05-05 16:48:54,183 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:48:54,189 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:48:54,189 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:48:54,189 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:48:54,190 [INFO] Old schema deleted (if any)
+2025-05-05 16:48:54,191 [INFO] Schema created with class: TestClass
+2025-05-05 16:48:54,192 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:48:54,192 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:48:54,198 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:48:54,198 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:48:54,198 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:48:54,200 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:48:54,201 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:48:54,201 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:48:54,201 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:48:54,202 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:48:54,207 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:48:54,207 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:48:54,207 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:48:54,210 [INFO]  Starting upload process...
+2025-05-05 16:48:54,211 [INFO]  Upload completed successfully!
+2025-05-05 16:48:54,211 [INFO]  Starting upload process...
+2025-05-05 16:48:54,211 [ERROR]  Process failed: Process error
+2025-05-05 16:48:54,211 [INFO] ChunkUploader.run test completed
+2025-05-05 16:48:54,215 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:48:54,217 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:48:54,217 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:48:54,220 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:48:54,222 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:48:54,222 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:48:54,226 [INFO] Testing Reranker initialization
+2025-05-05 16:48:54,227 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:48:54,227 [INFO] Reranker initialization test completed
+2025-05-05 16:48:54,230 [INFO] Testing Reranker.rerank method
+2025-05-05 16:48:54,231 [WARNING] No chunks to rerank.
+2025-05-05 16:48:54,231 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:48:54,231 [INFO] Reranker.rerank test completed
+2025-05-05 16:48:54,232 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:48:54,233 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:48:54,235 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:48:54,236 [ERROR] Failed to query model: Request error
+2025-05-05 16:48:54,236 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:48:54,240 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:48:54,389 [INFO] Testing QAApp.save_history method
+2025-05-05 16:48:54,400 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:48:54,400 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:48:54,401 [INFO] Testing TextLoader.load method
+2025-05-05 16:48:54,405 [INFO] Loaded text from test.txt
+2025-05-05 16:48:54,405 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:48:54,405 [INFO] TextLoader.load test completed
+2025-05-05 16:48:54,407 [INFO] Testing TextSplitter initialization
+2025-05-05 16:48:54,408 [INFO] TextSplitter initialization test completed
+2025-05-05 16:48:54,409 [INFO] Testing TextSplitter.split method
+2025-05-05 16:48:54,410 [INFO] Split text into 3 chunks
+2025-05-05 16:48:54,410 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:48:54,410 [INFO] TextSplitter.split test completed
+2025-05-05 16:48:54,412 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:48:54,412 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:48:54,412 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:48:54,415 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:48:54,415 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:48:54,416 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:48:54,416 [INFO] LLaMAClient.query test completed
+2025-05-05 16:48:54,418 [INFO] Testing QAGenerator initialization
+2025-05-05 16:48:54,418 [INFO] QAGenerator initialization test completed
+2025-05-05 16:48:54,420 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:48:54,420 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:48:54,421 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:48:54,422 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:48:54,823 [INFO] Q&A generation complete
+2025-05-05 16:48:54,825 [INFO] QAGenerator.generate test completed
+2025-05-05 16:48:54,827 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:48:54,828 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:48:54,828 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:48:54,829 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:48:54,830 [INFO] Testing main execution flow
+2025-05-05 16:48:54,833 [INFO] Main execution flow test completed
+2025-05-05 16:48:54,835 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:48:54,835 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:48:54,837 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:48:54,837 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:48:54,839 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:48:54,839 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:48:54,840 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:48:54,840 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:48:54,840 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:48:54,840 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:48:54,840 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:48:54,840 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:48:56,842 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:48:58,844 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:49:00,847 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:49:00,850 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:49:00,853 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:49:00,854 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:49:00,854 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:49:00,856 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:49:00,857 [INFO] Scraping topic: Topic1
+2025-05-05 16:49:02,359 [INFO] Scraping topic: Topic2
+2025-05-05 16:49:03,863 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:49:03,867 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:49:03,867 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:03,867 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,090 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,091 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:49:04,091 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:49:04,093 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:49:04,094 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,094 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,095 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 16:49:04,095 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 16:49:04,095 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 16:49:04,099 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:49:04,099 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,099 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,099 [INFO] LLaMA responded successfully.
+2025-05-05 16:49:04,099 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:49:04,099 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:49:04,103 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:49:04,106 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,106 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,106 [INFO] Loaded questions from test.csv
+2025-05-05 16:49:04,107 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,107 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,107 [ERROR] Error reading CSV file: File error
+2025-05-05 16:49:04,107 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:49:04,109 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:49:04,111 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,112 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,113 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,113 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,114 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:49:04,117 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:49:04,117 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:04,118 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:04,119 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:49:04,119 [INFO] Processing question: Test question 1
+2025-05-05 16:49:04,119 [INFO] Generated answer: Predicted answer
+2025-05-05 16:49:04,120 [INFO] Processing question: Test question 2
+2025-05-05 16:49:04,120 [INFO] Generated answer: Predicted answer
+2025-05-05 16:49:04,120 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:49:04,120 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:49:49,006 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:49:49,007 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:49:49,007 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:49:49,018 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:49:49,019 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:49:49,022 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:49:49,024 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:49:49,027 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:49:49,029 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:49:49,030 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:49:49,031 [ERROR] Error at index 0: API Error
+2025-05-05 16:49:49,032 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:49:49,032 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:49:49,035 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:49:49,039 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:49:49,040 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:49:49,040 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:49:49,043 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:49:49,047 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:49:49,049 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:49:49,055 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:49:49,055 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:49:49,059 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:49:49,060 [INFO] Resuming from index 0
+2025-05-05 16:49:49,062 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:49:49,065 [INFO] Resuming from index 2
+2025-05-05 16:49:49,070 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:49:49,070 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:49:49,073 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:49:49,073 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,085 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:49:49,085 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,086 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:49:49,088 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:49:49,088 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,089 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:49:49,092 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:49:49,092 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,092 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:49:49,095 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:49:49,096 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,097 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:49:49,101 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:49:49,101 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,101 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:49:49,105 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:49:49,105 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:49:49,108 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:49:49,109 [INFO] Starting evaluation of predictions...
+2025-05-05 16:49:49,110 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:49:49,111 [INFO] Summary saved to: summary.json
+2025-05-05 16:49:49,111 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:49:49,112 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:49:49,112 [ERROR] Excel file missing required columns: {'Question', 'Predicted_Answer', 'Answer'}
+2025-05-05 16:49:49,117 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:49:49,117 [INFO] Starting evaluation of predictions...
+2025-05-05 16:49:49,118 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:49:49,118 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:49:49,119 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:49:49,120 [INFO] Summary saved to: summary.json
+2025-05-05 16:49:49,120 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:49:49,120 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 16:49:49,123 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:49:49,123 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:49:49,124 [INFO] Loaded embedding model: test-model
+2025-05-05 16:49:49,124 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:49:49,125 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:49:49,125 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:49:49,125 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:49:49,130 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:49:49,130 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:49:49,130 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:49:49,135 [ERROR] Text file not found: test.txt
+2025-05-05 16:49:49,135 [ERROR] Failed to read file: File error
+2025-05-05 16:49:49,135 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:49:49,138 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:49:49,138 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:49:49,139 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:49:49,139 [INFO] Text split into 3 chunks
+2025-05-05 16:49:49,139 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:49:49,142 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:49:49,143 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:49:49,143 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:49:49,143 [INFO] Old schema deleted (if any)
+2025-05-05 16:49:49,144 [INFO] Schema created with class: TestClass
+2025-05-05 16:49:49,144 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:49:49,144 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:49:49,147 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:49:49,148 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:49:49,148 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:49:49,149 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:49:49,149 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:49:49,150 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:49:49,150 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:49:49,150 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:49:49,154 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:49:49,154 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:49:49,154 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:49:49,155 [INFO]  Starting upload process...
+2025-05-05 16:49:49,155 [INFO]  Upload completed successfully!
+2025-05-05 16:49:49,156 [INFO]  Starting upload process...
+2025-05-05 16:49:49,156 [ERROR]  Process failed: Process error
+2025-05-05 16:49:49,156 [INFO] ChunkUploader.run test completed
+2025-05-05 16:49:49,159 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:49:49,160 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:49:49,160 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:49:49,162 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:49:49,165 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:49:49,165 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:49:49,167 [INFO] Testing Reranker initialization
+2025-05-05 16:49:49,168 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:49:49,168 [INFO] Reranker initialization test completed
+2025-05-05 16:49:49,170 [INFO] Testing Reranker.rerank method
+2025-05-05 16:49:49,171 [WARNING] No chunks to rerank.
+2025-05-05 16:49:49,171 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:49:49,171 [INFO] Reranker.rerank test completed
+2025-05-05 16:49:49,172 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:49:49,172 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:49:49,174 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:49:49,175 [ERROR] Failed to query model: Request error
+2025-05-05 16:49:49,175 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:49:49,181 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:49:49,183 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:49:49,187 [INFO] Testing QAApp.save_history method
+2025-05-05 16:49:49,379 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:49:49,379 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:49:49,380 [INFO] Testing TextLoader.load method
+2025-05-05 16:49:49,386 [INFO] Loaded text from test.txt
+2025-05-05 16:49:49,386 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:49:49,386 [INFO] TextLoader.load test completed
+2025-05-05 16:49:49,387 [INFO] Testing TextSplitter initialization
+2025-05-05 16:49:49,388 [INFO] TextSplitter initialization test completed
+2025-05-05 16:49:49,389 [INFO] Testing TextSplitter.split method
+2025-05-05 16:49:49,390 [INFO] Split text into 3 chunks
+2025-05-05 16:49:49,390 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:49:49,390 [INFO] TextSplitter.split test completed
+2025-05-05 16:49:49,391 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:49:49,392 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:49:49,392 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:49:49,394 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:49:49,394 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:49:49,394 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:49:49,395 [INFO] LLaMAClient.query test completed
+2025-05-05 16:49:49,396 [INFO] Testing QAGenerator initialization
+2025-05-05 16:49:49,396 [INFO] QAGenerator initialization test completed
+2025-05-05 16:49:49,399 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:49:49,399 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:49:49,401 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:49:49,402 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:49:49,803 [INFO] Q&A generation complete
+2025-05-05 16:49:49,804 [INFO] QAGenerator.generate test completed
+2025-05-05 16:49:49,806 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:49:49,807 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:49:49,807 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:49:49,807 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:49:49,809 [INFO] Testing main execution flow
+2025-05-05 16:49:49,812 [INFO] Main execution flow test completed
+2025-05-05 16:49:49,816 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:49:49,816 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:49:49,818 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:49:49,818 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:49:49,819 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:49:49,820 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:49:49,820 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:49:49,820 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:49:49,821 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:49:49,821 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:49:49,821 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:49:49,821 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:49:51,824 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:49:53,826 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:49:55,828 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:49:55,830 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:49:55,833 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:49:55,833 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:49:55,833 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:49:55,836 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:49:55,836 [INFO] Scraping topic: Topic1
+2025-05-05 16:49:57,338 [INFO] Scraping topic: Topic2
+2025-05-05 16:49:58,842 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:49:58,845 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:49:58,845 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,845 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,846 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,846 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:49:58,846 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:49:58,848 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:49:58,848 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,849 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,850 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 16:49:58,850 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 16:49:58,850 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 16:49:58,854 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:49:58,855 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,855 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,855 [INFO] LLaMA responded successfully.
+2025-05-05 16:49:58,855 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:49:58,855 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:49:58,859 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:49:58,863 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,863 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,864 [INFO] Loaded questions from test.csv
+2025-05-05 16:49:58,864 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,864 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,864 [ERROR] Error reading CSV file: File error
+2025-05-05 16:49:58,864 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:49:58,867 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:49:58,868 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,868 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,869 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,869 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,870 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:49:58,876 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:49:58,876 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:49:58,877 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:49:58,878 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:49:58,878 [INFO] Processing question: Test question 1
+2025-05-05 16:49:58,878 [INFO] Generated answer: Predicted answer
+2025-05-05 16:49:58,879 [INFO] Processing question: Test question 2
+2025-05-05 16:49:58,879 [INFO] Generated answer: Predicted answer
+2025-05-05 16:49:58,879 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:49:58,879 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:51:06,790 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:51:06,791 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:51:06,792 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:51:06,801 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:51:06,802 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:51:06,806 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:51:06,807 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:51:06,810 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:51:06,813 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:51:06,813 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:51:06,814 [ERROR] Error at index 0: API Error
+2025-05-05 16:51:06,814 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:51:06,814 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:51:06,818 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:51:06,822 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:51:06,823 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:51:06,823 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:51:06,826 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:51:06,830 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:51:06,831 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:51:06,837 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:51:06,837 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:51:06,841 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:51:06,843 [INFO] Resuming from index 0
+2025-05-05 16:51:06,845 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:51:06,847 [INFO] Resuming from index 2
+2025-05-05 16:51:06,851 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:51:06,851 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:51:06,855 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:51:06,855 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,856 [INFO] QAEvaluator initialization test completed
+2025-05-05 16:51:06,861 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:51:06,861 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,861 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:51:06,864 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:51:06,864 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,864 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:51:06,867 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:51:06,867 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,867 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:51:06,870 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:51:06,871 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,872 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:51:06,875 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:51:06,875 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,875 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:51:06,878 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:51:06,878 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:51:06,882 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:51:06,883 [INFO] Starting evaluation of predictions...
+2025-05-05 16:51:06,884 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:51:06,885 [INFO] Summary saved to: summary.json
+2025-05-05 16:51:06,885 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:51:06,886 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:51:06,886 [ERROR] Excel file missing required columns: {'Predicted_Answer', 'Question', 'Answer'}
+2025-05-05 16:51:06,892 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:51:06,892 [INFO] Starting evaluation of predictions...
+2025-05-05 16:51:06,893 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:51:06,893 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:51:06,893 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:51:06,894 [INFO] Summary saved to: summary.json
+2025-05-05 16:51:06,894 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:51:06,894 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 16:51:06,897 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:51:06,897 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:51:06,897 [INFO] Loaded embedding model: test-model
+2025-05-05 16:51:06,898 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:51:06,898 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:51:06,899 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:51:06,899 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:51:06,902 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:51:06,902 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:51:06,902 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:51:06,907 [ERROR] Text file not found: test.txt
+2025-05-05 16:51:06,908 [ERROR] Failed to read file: File error
+2025-05-05 16:51:06,908 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:51:06,912 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:51:06,912 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:51:06,912 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:51:06,913 [INFO] Text split into 3 chunks
+2025-05-05 16:51:06,913 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:51:06,916 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:51:06,916 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:51:06,916 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:51:06,916 [INFO] Old schema deleted (if any)
+2025-05-05 16:51:06,917 [INFO] Schema created with class: TestClass
+2025-05-05 16:51:06,917 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:51:06,917 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:51:06,920 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:51:06,921 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:51:06,921 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:51:06,922 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:51:06,922 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:51:06,923 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:51:06,923 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:51:06,923 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:51:06,925 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:51:06,926 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:51:06,926 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:51:06,927 [INFO]  Starting upload process...
+2025-05-05 16:51:06,927 [INFO]  Upload completed successfully!
+2025-05-05 16:51:06,927 [INFO]  Starting upload process...
+2025-05-05 16:51:06,927 [ERROR]  Process failed: Process error
+2025-05-05 16:51:06,927 [INFO] ChunkUploader.run test completed
+2025-05-05 16:51:06,930 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:51:06,931 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:51:06,931 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:51:06,933 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:51:06,936 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:51:06,937 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:51:06,939 [INFO] Testing Reranker initialization
+2025-05-05 16:51:06,940 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:51:06,940 [INFO] Reranker initialization test completed
+2025-05-05 16:51:06,942 [INFO] Testing Reranker.rerank method
+2025-05-05 16:51:06,942 [WARNING] No chunks to rerank.
+2025-05-05 16:51:06,942 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:51:06,942 [INFO] Reranker.rerank test completed
+2025-05-05 16:51:06,944 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:51:06,944 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:51:06,946 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:51:06,946 [ERROR] Failed to query model: Request error
+2025-05-05 16:51:06,946 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:51:06,950 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:51:06,952 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:51:06,956 [INFO] Testing QAApp.save_history method
+2025-05-05 16:51:07,167 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:51:07,168 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:51:07,170 [INFO] Testing TextLoader.load method
+2025-05-05 16:51:07,174 [INFO] Loaded text from test.txt
+2025-05-05 16:51:07,174 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:51:07,174 [INFO] TextLoader.load test completed
+2025-05-05 16:51:07,175 [INFO] Testing TextSplitter initialization
+2025-05-05 16:51:07,176 [INFO] TextSplitter initialization test completed
+2025-05-05 16:51:07,177 [INFO] Testing TextSplitter.split method
+2025-05-05 16:51:07,177 [INFO] Split text into 3 chunks
+2025-05-05 16:51:07,178 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:51:07,178 [INFO] TextSplitter.split test completed
+2025-05-05 16:51:07,179 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:51:07,179 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:51:07,179 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:51:07,181 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:51:07,181 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:51:07,181 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:51:07,181 [INFO] LLaMAClient.query test completed
+2025-05-05 16:51:07,183 [INFO] Testing QAGenerator initialization
+2025-05-05 16:51:07,183 [INFO] QAGenerator initialization test completed
+2025-05-05 16:51:07,184 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:51:07,185 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:51:07,186 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:51:07,187 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:51:07,588 [INFO] Q&A generation complete
+2025-05-05 16:51:07,590 [INFO] QAGenerator.generate test completed
+2025-05-05 16:51:07,591 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:51:07,592 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:51:07,592 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:51:07,592 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:51:07,594 [INFO] Testing main execution flow
+2025-05-05 16:51:07,597 [INFO] Main execution flow test completed
+2025-05-05 16:51:07,598 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:51:07,599 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:51:07,600 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:51:07,600 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:51:07,602 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:51:07,603 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:51:07,604 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:51:07,604 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:51:07,604 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:51:07,604 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:51:07,604 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:51:07,605 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:51:09,607 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:51:11,609 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:51:13,612 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:51:13,615 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:51:13,620 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:51:13,620 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:51:13,620 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:51:13,622 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:51:13,623 [INFO] Scraping topic: Topic1
+2025-05-05 16:51:15,125 [INFO] Scraping topic: Topic2
+2025-05-05 16:51:16,627 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:51:16,630 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:51:16,631 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,631 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,631 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,631 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:51:16,631 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:51:16,634 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:51:16,634 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,634 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,636 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 16:51:16,636 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 16:51:16,636 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 16:51:16,640 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:51:16,640 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,640 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,640 [INFO] LLaMA responded successfully.
+2025-05-05 16:51:16,640 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:51:16,640 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:51:16,643 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:51:16,647 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,647 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,647 [INFO] Loaded questions from test.csv
+2025-05-05 16:51:16,648 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,648 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,648 [ERROR] Error reading CSV file: File error
+2025-05-05 16:51:16,648 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:51:16,650 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:51:16,652 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,652 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,653 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,653 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,654 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:51:16,658 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:51:16,659 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:51:16,659 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:51:16,660 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:51:16,660 [INFO] Processing question: Test question 1
+2025-05-05 16:51:16,660 [INFO] Generated answer: Predicted answer
+2025-05-05 16:51:16,661 [INFO] Processing question: Test question 2
+2025-05-05 16:51:16,661 [INFO] Generated answer: Predicted answer
+2025-05-05 16:51:16,661 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:51:16,661 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:52:39,963 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:52:39,964 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:52:39,965 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:52:39,975 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:52:39,975 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:52:39,979 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:52:39,980 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:52:39,984 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:52:39,986 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:52:39,986 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:52:39,987 [ERROR] Error at index 0: API Error
+2025-05-05 16:52:39,987 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:52:39,987 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:52:39,991 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:52:39,995 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:52:39,996 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:52:39,996 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:52:39,999 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:52:40,003 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:52:40,004 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:52:40,010 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:52:40,011 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:52:40,014 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:52:40,016 [INFO] Resuming from index 0
+2025-05-05 16:52:40,017 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:52:40,019 [INFO] Resuming from index 2
+2025-05-05 16:52:40,024 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:52:40,025 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:52:40,029 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:52:40,029 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,029 [INFO] QAEvaluator initialization test completed
+2025-05-05 16:52:40,032 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:52:40,032 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,033 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:52:40,035 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:52:40,036 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,036 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:52:40,038 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:52:40,039 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,039 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:52:40,042 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:52:40,043 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,044 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:52:40,047 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:52:40,047 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,047 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:52:40,050 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:52:40,051 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:52:40,055 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:52:40,056 [INFO] Starting evaluation of predictions...
+2025-05-05 16:52:40,057 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:52:40,058 [INFO] Summary saved to: summary.json
+2025-05-05 16:52:40,058 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:52:40,059 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:52:40,059 [ERROR] Excel file missing required columns: {'Answer', 'Question', 'Predicted_Answer'}
+2025-05-05 16:52:40,064 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:52:40,064 [INFO] Starting evaluation of predictions...
+2025-05-05 16:52:40,065 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:52:40,065 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:52:40,066 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:52:40,066 [INFO] Summary saved to: summary.json
+2025-05-05 16:52:40,066 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:52:40,066 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 16:52:40,070 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:52:40,070 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:52:40,070 [INFO] Loaded embedding model: test-model
+2025-05-05 16:52:40,071 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:52:40,071 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:52:40,071 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:52:40,071 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:52:40,074 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:52:40,074 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:52:40,074 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:52:40,080 [ERROR] Text file not found: test.txt
+2025-05-05 16:52:40,080 [ERROR] Failed to read file: File error
+2025-05-05 16:52:40,081 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:52:40,084 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:52:40,084 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:52:40,084 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:52:40,085 [INFO] Text split into 3 chunks
+2025-05-05 16:52:40,085 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:52:40,088 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:52:40,088 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:52:40,088 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:52:40,088 [INFO] Old schema deleted (if any)
+2025-05-05 16:52:40,089 [INFO] Schema created with class: TestClass
+2025-05-05 16:52:40,089 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:52:40,089 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:52:40,092 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:52:40,093 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:52:40,093 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:52:40,094 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:52:40,094 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:52:40,094 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:52:40,094 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:52:40,095 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:52:40,098 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:52:40,098 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:52:40,098 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:52:40,099 [INFO]  Starting upload process...
+2025-05-05 16:52:40,099 [INFO]  Upload completed successfully!
+2025-05-05 16:52:40,100 [INFO]  Starting upload process...
+2025-05-05 16:52:40,100 [ERROR]  Process failed: Process error
+2025-05-05 16:52:40,100 [INFO] ChunkUploader.run test completed
+2025-05-05 16:52:40,104 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:52:40,105 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:52:40,105 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:52:40,107 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:52:40,109 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:52:40,110 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:52:40,113 [INFO] Testing Reranker initialization
+2025-05-05 16:52:40,114 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:52:40,114 [INFO] Reranker initialization test completed
+2025-05-05 16:52:40,116 [INFO] Testing Reranker.rerank method
+2025-05-05 16:52:40,116 [WARNING] No chunks to rerank.
+2025-05-05 16:52:40,116 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:52:40,116 [INFO] Reranker.rerank test completed
+2025-05-05 16:52:40,118 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:52:40,118 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:52:40,120 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:52:40,121 [ERROR] Failed to query model: Request error
+2025-05-05 16:52:40,121 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:52:40,125 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:52:40,127 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:52:40,133 [INFO] Testing QAApp.save_history method
+2025-05-05 16:52:40,322 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:52:40,322 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:52:40,323 [INFO] Testing TextLoader.load method
+2025-05-05 16:52:40,328 [INFO] Loaded text from test.txt
+2025-05-05 16:52:40,328 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:52:40,328 [INFO] TextLoader.load test completed
+2025-05-05 16:52:40,330 [INFO] Testing TextSplitter initialization
+2025-05-05 16:52:40,330 [INFO] TextSplitter initialization test completed
+2025-05-05 16:52:40,332 [INFO] Testing TextSplitter.split method
+2025-05-05 16:52:40,332 [INFO] Split text into 3 chunks
+2025-05-05 16:52:40,332 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:52:40,332 [INFO] TextSplitter.split test completed
+2025-05-05 16:52:40,333 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:52:40,334 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:52:40,334 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:52:40,336 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:52:40,336 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:52:40,336 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:52:40,337 [INFO] LLaMAClient.query test completed
+2025-05-05 16:52:40,338 [INFO] Testing QAGenerator initialization
+2025-05-05 16:52:40,338 [INFO] QAGenerator initialization test completed
+2025-05-05 16:52:40,340 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:52:40,340 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:52:40,342 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:52:40,343 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:52:40,744 [INFO] Q&A generation complete
+2025-05-05 16:52:40,745 [INFO] QAGenerator.generate test completed
+2025-05-05 16:52:40,747 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:52:40,747 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:52:40,748 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:52:40,748 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:52:40,749 [INFO] Testing main execution flow
+2025-05-05 16:52:40,752 [INFO] Main execution flow test completed
+2025-05-05 16:52:40,754 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:52:40,755 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:52:40,757 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:52:40,757 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:52:40,759 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:52:40,760 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:52:40,760 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:52:40,760 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:52:40,761 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:52:40,761 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:52:40,761 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:52:40,761 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:52:42,763 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:52:44,766 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:52:46,769 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:52:46,771 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:52:46,776 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:52:46,776 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:52:46,776 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:52:46,778 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:52:46,779 [INFO] Scraping topic: Topic1
+2025-05-05 16:52:48,281 [INFO] Scraping topic: Topic2
+2025-05-05 16:52:49,785 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:52:49,788 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:52:49,789 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,789 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,789 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,789 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:52:49,789 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:52:49,792 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:52:49,792 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,792 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,794 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 16:52:49,794 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 16:52:49,794 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 16:52:49,797 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:52:49,798 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,798 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,798 [INFO] LLaMA responded successfully.
+2025-05-05 16:52:49,798 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:52:49,798 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:52:49,803 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:52:49,807 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,807 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,807 [INFO] Loaded questions from test.csv
+2025-05-05 16:52:49,808 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,808 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,808 [ERROR] Error reading CSV file: File error
+2025-05-05 16:52:49,808 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:52:49,811 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:52:49,812 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,812 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,814 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,814 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,815 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:52:49,820 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:52:49,820 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:52:49,820 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:52:49,822 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:52:49,822 [INFO] Processing question: Test question 1
+2025-05-05 16:52:49,822 [INFO] Generated answer: Predicted answer
+2025-05-05 16:52:49,824 [INFO] Processing question: Test question 2
+2025-05-05 16:52:49,824 [INFO] Generated answer: Predicted answer
+2025-05-05 16:52:49,824 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:52:49,824 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:53:27,480 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:53:27,482 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:53:27,482 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:53:27,492 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:53:27,493 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:53:27,496 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:53:27,498 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:53:27,502 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:53:27,504 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:53:27,505 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:53:27,506 [ERROR] Error at index 0: API Error
+2025-05-05 16:53:27,506 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:53:27,506 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:53:27,511 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:53:27,514 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:53:27,515 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:53:27,515 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:53:27,519 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:53:27,524 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:53:27,526 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:53:27,531 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:53:27,531 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:53:27,535 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:53:27,538 [INFO] Resuming from index 0
+2025-05-05 16:53:27,540 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:53:27,542 [INFO] Resuming from index 2
+2025-05-05 16:53:27,548 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:53:27,548 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:53:27,551 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:53:27,551 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,552 [INFO] QAEvaluator initialization test completed
+2025-05-05 16:53:27,556 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:53:27,556 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,557 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:53:27,560 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:53:27,560 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,560 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:53:27,563 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:53:27,564 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,564 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:53:27,567 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:53:27,569 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,570 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:53:27,574 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:53:27,574 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,574 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:53:27,578 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:53:27,578 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:53:27,583 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:53:27,583 [INFO] Starting evaluation of predictions...
+2025-05-05 16:53:27,585 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:53:27,586 [INFO] Summary saved to: summary.json
+2025-05-05 16:53:27,587 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:53:27,588 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:53:27,588 [ERROR] Excel file missing required columns: {'Question', 'Answer', 'Predicted_Answer'}
+2025-05-05 16:53:27,593 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:53:27,593 [INFO] Starting evaluation of predictions...
+2025-05-05 16:53:27,594 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:53:27,594 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:53:27,595 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:53:27,595 [INFO] Summary saved to: summary.json
+2025-05-05 16:53:27,596 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:53:27,596 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 16:53:27,599 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:53:27,600 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:53:27,600 [INFO] Loaded embedding model: test-model
+2025-05-05 16:53:27,601 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:53:27,601 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:53:27,601 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:53:27,601 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:53:27,605 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:53:27,606 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:53:27,606 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:53:27,612 [ERROR] Text file not found: test.txt
+2025-05-05 16:53:27,612 [ERROR] Failed to read file: File error
+2025-05-05 16:53:27,612 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:53:27,616 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:53:27,616 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:53:27,616 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:53:27,617 [INFO] Text split into 3 chunks
+2025-05-05 16:53:27,617 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:53:27,620 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:53:27,620 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:53:27,620 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:53:27,621 [INFO] Old schema deleted (if any)
+2025-05-05 16:53:27,622 [INFO] Schema created with class: TestClass
+2025-05-05 16:53:27,622 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:53:27,622 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:53:27,626 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:53:27,627 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:53:27,627 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:53:27,628 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:53:27,628 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:53:27,628 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:53:27,629 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:53:27,629 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:53:27,632 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:53:27,632 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:53:27,632 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:53:27,634 [INFO]  Starting upload process...
+2025-05-05 16:53:27,635 [INFO]  Upload completed successfully!
+2025-05-05 16:53:27,635 [INFO]  Starting upload process...
+2025-05-05 16:53:27,635 [ERROR]  Process failed: Process error
+2025-05-05 16:53:27,636 [INFO] ChunkUploader.run test completed
+2025-05-05 16:53:27,639 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:53:27,640 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:53:27,640 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:53:27,643 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:53:27,645 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:53:27,645 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:53:27,648 [INFO] Testing Reranker initialization
+2025-05-05 16:53:27,649 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:53:27,649 [INFO] Reranker initialization test completed
+2025-05-05 16:53:27,651 [INFO] Testing Reranker.rerank method
+2025-05-05 16:53:27,652 [WARNING] No chunks to rerank.
+2025-05-05 16:53:27,652 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:53:27,652 [INFO] Reranker.rerank test completed
+2025-05-05 16:53:27,655 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:53:27,655 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:53:27,658 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:53:27,658 [ERROR] Failed to query model: Request error
+2025-05-05 16:53:27,659 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:53:27,663 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:53:27,666 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:53:27,671 [INFO] Testing QAApp.save_history method
+2025-05-05 16:53:27,678 [ERROR] Failed to save JSON file /tmp/pytest-of-shtlp_0047/pytest-7/test_save_history0/history.json: [Errno 13] Permission denied: '/tmp/pytest-of-shtlp_0047/pytest-7/test_save_history0/history.json'
+2025-05-05 16:53:27,678 [INFO] QAApp.save_history test completed
+2025-05-05 16:53:27,682 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:53:27,682 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:53:27,684 [INFO] Testing TextLoader.load method
+2025-05-05 16:53:27,688 [INFO] Loaded text from test.txt
+2025-05-05 16:53:27,689 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:53:27,689 [INFO] TextLoader.load test completed
+2025-05-05 16:53:27,691 [INFO] Testing TextSplitter initialization
+2025-05-05 16:53:27,691 [INFO] TextSplitter initialization test completed
+2025-05-05 16:53:27,693 [INFO] Testing TextSplitter.split method
+2025-05-05 16:53:27,693 [INFO] Split text into 3 chunks
+2025-05-05 16:53:27,694 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:53:27,694 [INFO] TextSplitter.split test completed
+2025-05-05 16:53:27,696 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:53:27,696 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:53:27,696 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:53:27,698 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:53:27,698 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:53:27,699 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:53:27,699 [INFO] LLaMAClient.query test completed
+2025-05-05 16:53:27,701 [INFO] Testing QAGenerator initialization
+2025-05-05 16:53:27,702 [INFO] QAGenerator initialization test completed
+2025-05-05 16:53:27,703 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:53:27,704 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:53:27,706 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:53:27,707 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:53:28,108 [INFO] Q&A generation complete
+2025-05-05 16:53:28,110 [INFO] QAGenerator.generate test completed
+2025-05-05 16:53:28,111 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:53:28,112 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:53:28,113 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:53:28,113 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:53:28,114 [INFO] Testing main execution flow
+2025-05-05 16:53:28,117 [INFO] Main execution flow test completed
+2025-05-05 16:53:28,119 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:53:28,119 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:53:28,121 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:53:28,121 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:53:28,123 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:53:28,124 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:53:28,125 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:53:28,125 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:53:28,125 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:53:28,125 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:53:28,125 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:53:28,126 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:53:30,128 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:53:32,131 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:53:34,133 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:53:34,136 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:53:34,140 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:53:34,141 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:53:34,141 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:53:34,144 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:53:34,145 [INFO] Scraping topic: Topic1
+2025-05-05 16:53:35,647 [INFO] Scraping topic: Topic2
+2025-05-05 16:53:37,150 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:53:37,157 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:53:37,157 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,157 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,158 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,158 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:53:37,158 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:53:37,161 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:53:37,161 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,161 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,164 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 16:53:37,165 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 16:53:37,165 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 16:53:37,169 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:53:37,169 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,169 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,169 [INFO] LLaMA responded successfully.
+2025-05-05 16:53:37,170 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:53:37,170 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:53:37,173 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:53:37,176 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,177 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,177 [INFO] Loaded questions from test.csv
+2025-05-05 16:53:37,177 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,178 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,178 [ERROR] Error reading CSV file: File error
+2025-05-05 16:53:37,178 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:53:37,182 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:53:37,184 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,184 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,186 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,186 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,187 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:53:37,191 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:53:37,191 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:53:37,191 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:53:37,192 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:53:37,192 [INFO] Processing question: Test question 1
+2025-05-05 16:53:37,193 [INFO] Generated answer: Predicted answer
+2025-05-05 16:53:37,193 [INFO] Processing question: Test question 2
+2025-05-05 16:53:37,194 [INFO] Generated answer: Predicted answer
+2025-05-05 16:53:37,194 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:53:37,194 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:54:09,715 [INFO] Testing RAGEvaluator initialization
+2025-05-05 16:54:09,717 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 16:54:09,717 [INFO] RAGEvaluator initialization test completed
+2025-05-05 16:54:09,726 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 16:54:09,727 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 16:54:09,729 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 16:54:09,730 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 16:54:09,735 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 16:54:09,737 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:54:09,737 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 16:54:09,738 [ERROR] Error at index 0: API Error
+2025-05-05 16:54:09,738 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 16:54:09,738 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 16:54:09,742 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 16:54:09,745 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:54:09,746 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 16:54:09,746 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 16:54:09,749 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 16:54:09,754 [WARNING] No valid scores to update in JSON.
+2025-05-05 16:54:09,755 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 16:54:09,760 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 16:54:09,760 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 16:54:09,763 [INFO] Testing RAGEvaluator.run method
+2025-05-05 16:54:09,765 [INFO] Resuming from index 0
+2025-05-05 16:54:09,767 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:54:09,769 [INFO] Resuming from index 2
+2025-05-05 16:54:09,774 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 16:54:09,775 [INFO] RAGEvaluator.run test completed
+2025-05-05 16:54:09,778 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:54:09,778 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,779 [INFO] QAEvaluator initialization test completed
+2025-05-05 16:54:09,781 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:54:09,781 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,781 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:54:09,784 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:54:09,784 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,785 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:54:09,788 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:54:09,788 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,789 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:54:09,791 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:54:09,792 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,793 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:54:09,797 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:54:09,797 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,797 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:54:09,801 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:54:09,801 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:54:09,806 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:54:09,806 [INFO] Starting evaluation of predictions...
+2025-05-05 16:54:09,808 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:54:09,808 [INFO] Summary saved to: summary.json
+2025-05-05 16:54:09,808 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:54:09,809 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:54:09,809 [ERROR] Excel file missing required columns: {'Answer', 'Predicted_Answer', 'Question'}
+2025-05-05 16:54:09,813 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:54:09,813 [INFO] Starting evaluation of predictions...
+2025-05-05 16:54:09,814 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:54:09,814 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:54:09,814 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:54:09,815 [INFO] Summary saved to: summary.json
+2025-05-05 16:54:09,815 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:54:09,815 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 16:54:09,818 [INFO] Testing ChunkUploader initialization
+2025-05-05 16:54:09,819 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 16:54:09,819 [INFO] Loaded embedding model: test-model
+2025-05-05 16:54:09,819 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 16:54:09,821 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:54:09,821 [ERROR] Error loading embedding model: Model error
+2025-05-05 16:54:09,822 [INFO] ChunkUploader initialization test completed
+2025-05-05 16:54:09,824 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 16:54:09,825 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:54:09,825 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:54:09,828 [ERROR] Text file not found: test.txt
+2025-05-05 16:54:09,829 [ERROR] Failed to read file: File error
+2025-05-05 16:54:09,829 [INFO] ChunkUploader.load_text test completed
+2025-05-05 16:54:09,833 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 16:54:09,833 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:54:09,833 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:54:09,834 [INFO] Text split into 3 chunks
+2025-05-05 16:54:09,834 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 16:54:09,838 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 16:54:09,838 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:54:09,838 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:54:09,839 [INFO] Old schema deleted (if any)
+2025-05-05 16:54:09,839 [INFO] Schema created with class: TestClass
+2025-05-05 16:54:09,839 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 16:54:09,840 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 16:54:09,842 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 16:54:09,843 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:54:09,843 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:54:09,844 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:54:09,844 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 16:54:09,844 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 16:54:09,844 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 16:54:09,844 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 16:54:09,848 [INFO] Testing ChunkUploader.run method
+2025-05-05 16:54:09,848 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 16:54:09,849 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 16:54:09,850 [INFO]  Starting upload process...
+2025-05-05 16:54:09,850 [INFO]  Upload completed successfully!
+2025-05-05 16:54:09,851 [INFO]  Starting upload process...
+2025-05-05 16:54:09,851 [ERROR]  Process failed: Process error
+2025-05-05 16:54:09,851 [INFO] ChunkUploader.run test completed
+2025-05-05 16:54:09,855 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 16:54:09,856 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 16:54:09,856 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 16:54:09,859 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 16:54:09,861 [ERROR] Retrieval failed: Encoding error
+2025-05-05 16:54:09,861 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 16:54:09,863 [INFO] Testing Reranker initialization
+2025-05-05 16:54:09,863 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 16:54:09,863 [INFO] Reranker initialization test completed
+2025-05-05 16:54:09,866 [INFO] Testing Reranker.rerank method
+2025-05-05 16:54:09,866 [WARNING] No chunks to rerank.
+2025-05-05 16:54:09,866 [ERROR] Reranking failed: Prediction error
+2025-05-05 16:54:09,866 [INFO] Reranker.rerank test completed
+2025-05-05 16:54:09,868 [INFO] Testing LlamaQuerier initialization
+2025-05-05 16:54:09,868 [INFO] LlamaQuerier initialization test completed
+2025-05-05 16:54:09,871 [INFO] Testing LlamaQuerier.query method
+2025-05-05 16:54:09,872 [ERROR] Failed to query model: Request error
+2025-05-05 16:54:09,872 [INFO] LlamaQuerier.query test completed
+2025-05-05 16:54:09,877 [INFO] Testing QAApp initialization and load_history
+2025-05-05 16:54:09,878 [INFO] QAApp initialization and load_history test completed
+2025-05-05 16:54:09,882 [INFO] Testing QAApp.save_history method
+2025-05-05 16:54:09,887 [ERROR] Failed to save JSON file /tmp/pytest-of-shtlp_0047/pytest-8/test_save_history0/history.json: [Errno 13] Permission denied: '/tmp/pytest-of-shtlp_0047/pytest-8/test_save_history0/history.json'
+2025-05-05 16:54:09,887 [INFO] QAApp.save_history test completed
+2025-05-05 16:54:09,891 [INFO] Testing QAApp._format_prompt method
+2025-05-05 16:54:09,891 [INFO] QAApp._format_prompt test completed
+2025-05-05 16:54:09,893 [INFO] Testing TextLoader.load method
+2025-05-05 16:54:09,896 [INFO] Loaded text from test.txt
+2025-05-05 16:54:09,897 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 16:54:09,897 [INFO] TextLoader.load test completed
+2025-05-05 16:54:09,898 [INFO] Testing TextSplitter initialization
+2025-05-05 16:54:09,900 [INFO] TextSplitter initialization test completed
+2025-05-05 16:54:09,901 [INFO] Testing TextSplitter.split method
+2025-05-05 16:54:09,902 [INFO] Split text into 3 chunks
+2025-05-05 16:54:09,902 [ERROR] Error splitting text: Splitting error
+2025-05-05 16:54:09,902 [INFO] TextSplitter.split test completed
+2025-05-05 16:54:09,904 [INFO] Testing LLaMAClient initialization
+2025-05-05 16:54:09,905 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:54:09,905 [INFO] LLaMAClient initialization test completed
+2025-05-05 16:54:09,908 [INFO] Testing LLaMAClient.query method
+2025-05-05 16:54:09,909 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 16:54:09,909 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 16:54:09,909 [INFO] LLaMAClient.query test completed
+2025-05-05 16:54:09,911 [INFO] Testing QAGenerator initialization
+2025-05-05 16:54:09,911 [INFO] QAGenerator initialization test completed
+2025-05-05 16:54:09,912 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 16:54:09,913 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 16:54:09,914 [INFO] Testing QAGenerator.generate method
+2025-05-05 16:54:09,915 [INFO] Generating Q&A for 3 chunks
+2025-05-05 16:54:10,316 [INFO] Q&A generation complete
+2025-05-05 16:54:10,318 [INFO] QAGenerator.generate test completed
+2025-05-05 16:54:10,320 [INFO] Testing DataSaver.to_csv method
+2025-05-05 16:54:10,321 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 16:54:10,321 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 16:54:10,322 [INFO] DataSaver.to_csv test completed
+2025-05-05 16:54:10,323 [INFO] Testing main execution flow
+2025-05-05 16:54:10,327 [INFO] Main execution flow test completed
+2025-05-05 16:54:10,329 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:54:10,330 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:54:10,331 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:54:10,331 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:54:10,334 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:54:10,335 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:54:10,335 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:54:10,335 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 16:54:10,335 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:54:10,336 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:54:10,336 [WARNING] Content div not found for Missing_Div
+2025-05-05 16:54:10,336 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 16:54:12,338 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 16:54:14,341 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 16:54:16,343 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:54:16,346 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:54:16,350 [INFO] Data saved successfully to test_file.txt
+2025-05-05 16:54:16,351 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 16:54:16,351 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:54:16,355 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:54:16,356 [INFO] Scraping topic: Topic1
+2025-05-05 16:54:17,859 [INFO] Scraping topic: Topic2
+2025-05-05 16:54:19,363 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:54:19,366 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 16:54:19,366 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,367 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,368 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,369 [CRITICAL] Initialization failed: Connection error
+2025-05-05 16:54:19,369 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 16:54:19,372 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 16:54:19,373 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,373 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,375 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 16:54:19,375 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 16:54:19,375 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 16:54:19,381 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 16:54:19,381 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,381 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,382 [INFO] LLaMA responded successfully.
+2025-05-05 16:54:19,382 [ERROR] Error querying llama3: HTTP error
+2025-05-05 16:54:19,382 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 16:54:19,386 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 16:54:19,390 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,391 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,391 [INFO] Loaded questions from test.csv
+2025-05-05 16:54:19,392 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,392 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,392 [ERROR] Error reading CSV file: File error
+2025-05-05 16:54:19,392 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 16:54:19,395 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 16:54:19,397 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,397 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,401 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,402 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,403 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 16:54:19,408 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 16:54:19,409 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 16:54:19,409 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 16:54:19,410 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 16:54:19,411 [INFO] Processing question: Test question 1
+2025-05-05 16:54:19,411 [INFO] Generated answer: Predicted answer
+2025-05-05 16:54:19,412 [INFO] Processing question: Test question 2
+2025-05-05 16:54:19,412 [INFO] Generated answer: Predicted answer
+2025-05-05 16:54:19,412 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 16:54:19,413 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 16:59:36,291 [INFO] Testing QAEvaluator initialization
+2025-05-05 16:59:36,292 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,292 [INFO] QAEvaluator initialization test completed
+2025-05-05 16:59:36,294 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 16:59:36,295 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,295 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 16:59:36,298 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 16:59:36,298 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,298 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 16:59:36,300 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 16:59:36,301 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,301 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 16:59:36,304 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 16:59:36,305 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,306 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 16:59:36,308 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 16:59:36,308 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,308 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 16:59:36,311 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 16:59:36,311 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 16:59:36,315 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:59:36,315 [INFO] Starting evaluation of predictions...
+2025-05-05 16:59:36,318 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:59:36,319 [INFO] Summary saved to: summary.json
+2025-05-05 16:59:36,319 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 16:59:36,319 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 16:59:36,320 [ERROR] Excel file missing required columns: {'Answer', 'Question', 'Predicted_Answer'}
+2025-05-05 16:59:36,324 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 16:59:36,324 [INFO] Starting evaluation of predictions...
+2025-05-05 16:59:36,325 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 16:59:36,325 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 16:59:36,326 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 16:59:36,327 [INFO] Summary saved to: summary.json
+2025-05-05 16:59:36,327 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 16:59:36,327 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 17:00:33,359 [INFO] Testing ChunkUploader initialization
+2025-05-05 17:00:33,359 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 17:00:33,359 [INFO] Loaded embedding model: test-model
+2025-05-05 17:00:33,360 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 17:00:33,361 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:00:33,361 [ERROR] Error loading embedding model: Model error
+2025-05-05 17:00:33,361 [INFO] ChunkUploader initialization test completed
+2025-05-05 17:00:33,364 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 17:00:33,364 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:00:33,364 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:00:33,369 [ERROR] Text file not found: test.txt
+2025-05-05 17:00:33,370 [ERROR] Failed to read file: File error
+2025-05-05 17:00:33,370 [INFO] ChunkUploader.load_text test completed
+2025-05-05 17:00:33,373 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 17:00:33,373 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:00:33,373 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:00:33,374 [INFO] Text split into 3 chunks
+2025-05-05 17:00:33,374 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 17:00:33,377 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 17:00:33,377 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:00:33,377 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:00:33,378 [INFO] Old schema deleted (if any)
+2025-05-05 17:00:33,378 [INFO] Schema created with class: TestClass
+2025-05-05 17:00:33,379 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 17:00:33,379 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 17:00:33,382 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 17:00:33,382 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:00:33,382 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:00:33,383 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 17:00:33,383 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 17:00:33,384 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 17:00:33,384 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 17:00:33,384 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 17:00:33,387 [INFO] Testing ChunkUploader.run method
+2025-05-05 17:00:33,387 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:00:33,387 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:00:33,388 [INFO]  Starting upload process...
+2025-05-05 17:00:33,389 [INFO]  Upload completed successfully!
+2025-05-05 17:00:33,389 [INFO]  Starting upload process...
+2025-05-05 17:00:33,389 [ERROR]  Process failed: Process error
+2025-05-05 17:00:33,389 [INFO] ChunkUploader.run test completed
+2025-05-05 17:01:23,430 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 17:01:23,431 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 17:01:23,432 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 17:01:23,434 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 17:01:23,437 [ERROR] Retrieval failed: Encoding error
+2025-05-05 17:01:23,437 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 17:01:23,440 [INFO] Testing Reranker initialization
+2025-05-05 17:01:23,441 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 17:01:23,441 [INFO] Reranker initialization test completed
+2025-05-05 17:01:23,443 [INFO] Testing Reranker.rerank method
+2025-05-05 17:01:23,443 [WARNING] No chunks to rerank.
+2025-05-05 17:01:23,443 [ERROR] Reranking failed: Prediction error
+2025-05-05 17:01:23,443 [INFO] Reranker.rerank test completed
+2025-05-05 17:01:23,445 [INFO] Testing LlamaQuerier initialization
+2025-05-05 17:01:23,445 [INFO] LlamaQuerier initialization test completed
+2025-05-05 17:01:23,447 [INFO] Testing LlamaQuerier.query method
+2025-05-05 17:01:23,447 [ERROR] Failed to query model: Request error
+2025-05-05 17:01:23,448 [INFO] LlamaQuerier.query test completed
+2025-05-05 17:01:23,452 [INFO] Testing QAApp initialization and load_history
+2025-05-05 17:01:23,454 [INFO] QAApp initialization and load_history test completed
+2025-05-05 17:01:23,458 [INFO] Testing QAApp.save_history method
+2025-05-05 17:01:23,464 [ERROR] Failed to save JSON file /tmp/pytest-of-shtlp_0047/pytest-9/test_save_history0/history.json: [Errno 13] Permission denied: '/tmp/pytest-of-shtlp_0047/pytest-9/test_save_history0/history.json'
+2025-05-05 17:01:23,464 [INFO] QAApp.save_history test completed
+2025-05-05 17:01:23,469 [INFO] Testing QAApp._format_prompt method
+2025-05-05 17:01:23,469 [INFO] QAApp._format_prompt test completed
+2025-05-05 17:01:48,847 [INFO] Testing TextLoader.load method
+2025-05-05 17:01:48,853 [INFO] Loaded text from test.txt
+2025-05-05 17:01:48,854 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 17:01:48,854 [INFO] TextLoader.load test completed
+2025-05-05 17:01:48,857 [INFO] Testing TextSplitter initialization
+2025-05-05 17:01:48,857 [INFO] TextSplitter initialization test completed
+2025-05-05 17:01:48,859 [INFO] Testing TextSplitter.split method
+2025-05-05 17:01:48,860 [INFO] Split text into 3 chunks
+2025-05-05 17:01:48,861 [ERROR] Error splitting text: Splitting error
+2025-05-05 17:01:48,861 [INFO] TextSplitter.split test completed
+2025-05-05 17:01:48,862 [INFO] Testing LLaMAClient initialization
+2025-05-05 17:01:48,862 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 17:01:48,862 [INFO] LLaMAClient initialization test completed
+2025-05-05 17:01:48,865 [INFO] Testing LLaMAClient.query method
+2025-05-05 17:01:48,865 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 17:01:48,865 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 17:01:48,866 [INFO] LLaMAClient.query test completed
+2025-05-05 17:01:48,867 [INFO] Testing QAGenerator initialization
+2025-05-05 17:01:48,868 [INFO] QAGenerator initialization test completed
+2025-05-05 17:01:48,869 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 17:01:48,869 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 17:01:48,871 [INFO] Testing QAGenerator.generate method
+2025-05-05 17:01:48,872 [INFO] Generating Q&A for 3 chunks
+2025-05-05 17:01:49,273 [INFO] Q&A generation complete
+2025-05-05 17:01:49,275 [INFO] QAGenerator.generate test completed
+2025-05-05 17:01:49,277 [INFO] Testing DataSaver.to_csv method
+2025-05-05 17:01:49,278 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 17:01:49,278 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 17:01:49,278 [INFO] DataSaver.to_csv test completed
+2025-05-05 17:01:49,279 [INFO] Testing main execution flow
+2025-05-05 17:01:49,283 [INFO] Main execution flow test completed
+2025-05-05 17:02:16,849 [INFO] Testing RAGEvaluator initialization
+2025-05-05 17:02:16,850 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 17:02:16,851 [INFO] RAGEvaluator initialization test completed
+2025-05-05 17:02:16,853 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 17:02:16,855 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 17:02:16,857 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 17:02:16,909 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 17:02:16,912 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 17:02:16,916 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 17:02:16,916 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 17:02:16,917 [ERROR] Error at index 0: API Error
+2025-05-05 17:02:16,917 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 17:02:16,917 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 17:02:16,920 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 17:02:16,924 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 17:02:16,924 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 17:02:16,925 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 17:02:16,928 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 17:02:16,936 [WARNING] No valid scores to update in JSON.
+2025-05-05 17:02:16,937 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 17:02:16,942 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 17:02:16,943 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 17:02:16,946 [INFO] Testing RAGEvaluator.run method
+2025-05-05 17:02:16,948 [INFO] Resuming from index 0
+2025-05-05 17:02:16,949 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 17:02:16,951 [INFO] Resuming from index 2
+2025-05-05 17:02:16,956 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 17:02:16,957 [INFO] RAGEvaluator.run test completed
+2025-05-05 17:02:50,192 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 17:02:50,192 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,192 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,193 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,193 [CRITICAL] Initialization failed: Connection error
+2025-05-05 17:02:50,193 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 17:02:50,195 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 17:02:50,196 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,196 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,198 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 17:02:50,198 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 17:02:50,202 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 17:02:50,206 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 17:02:50,207 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,207 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,207 [INFO] LLaMA responded successfully.
+2025-05-05 17:02:50,207 [ERROR] Error querying llama3: HTTP error
+2025-05-05 17:02:50,207 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 17:02:50,209 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 17:02:50,213 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,213 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,213 [INFO] Loaded questions from test.csv
+2025-05-05 17:02:50,214 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,214 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,214 [ERROR] Error reading CSV file: File error
+2025-05-05 17:02:50,214 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 17:02:50,216 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 17:02:50,217 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,217 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,219 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,219 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,220 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 17:02:50,223 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 17:02:50,224 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:02:50,224 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:02:50,225 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 17:02:50,225 [INFO] Processing question: Test question 1
+2025-05-05 17:02:50,225 [INFO] Generated answer: Predicted answer
+2025-05-05 17:02:50,226 [INFO] Processing question: Test question 2
+2025-05-05 17:02:50,227 [INFO] Generated answer: Predicted answer
+2025-05-05 17:02:50,227 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 17:02:50,227 [INFO] RAGQuestionAnswering.run test completed
+2025-05-05 17:10:18,632 [INFO] Testing RAGEvaluator initialization
+2025-05-05 17:10:18,633 [ERROR] GEMINI_API_KEY not found in environment.
+2025-05-05 17:10:18,634 [INFO] RAGEvaluator initialization test completed
+2025-05-05 17:10:18,643 [INFO] Testing RAGEvaluator.build_prompt method
+2025-05-05 17:10:18,644 [INFO] RAGEvaluator.build_prompt test completed
+2025-05-05 17:10:18,646 [INFO] Testing RAGEvaluator.extract_scores method
+2025-05-05 17:10:18,647 [INFO] RAGEvaluator.extract_scores test completed
+2025-05-05 17:10:18,650 [INFO] Testing RAGEvaluator.evaluate_batch method
+2025-05-05 17:10:18,653 [INFO] Row 0 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 17:10:18,654 [INFO] Row 1 scores: [0.95, 0.85, 0.9, 0.8]
+2025-05-05 17:10:18,654 [ERROR] Error at index 0: API Error
+2025-05-05 17:10:18,654 [INFO] Row 0 scores: [None, None, None, None]
+2025-05-05 17:10:18,655 [INFO] RAGEvaluator.evaluate_batch test completed
+2025-05-05 17:10:18,658 [INFO] Testing RAGEvaluator.append_to_excel method
+2025-05-05 17:10:18,661 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 17:10:18,662 [INFO] Appended 2 rows to output.xlsx
+2025-05-05 17:10:18,662 [INFO] RAGEvaluator.append_to_excel test completed
+2025-05-05 17:10:18,666 [INFO] Testing RAGEvaluator.update_json_scores method
+2025-05-05 17:10:18,670 [WARNING] No valid scores to update in JSON.
+2025-05-05 17:10:18,671 [INFO] Updated JSON scores: {'faithfulness': 0.85, 'answer_relevancy': 0.75, 'context_precision': 0.65, 'context_recall': 0.55}
+2025-05-05 17:10:18,676 [INFO] Updated JSON scores: {'faithfulness': 0.88, 'answer_relevancy': 0.78, 'context_precision': 0.68, 'context_recall': 0.58}
+2025-05-05 17:10:18,676 [INFO] RAGEvaluator.update_json_scores test completed
+2025-05-05 17:10:18,680 [INFO] Testing RAGEvaluator.run method
+2025-05-05 17:10:18,682 [INFO] Resuming from index 0
+2025-05-05 17:10:18,683 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 17:10:18,686 [INFO] Resuming from index 2
+2025-05-05 17:10:18,690 [INFO] Sleeping for 60s before next batch...
+
+2025-05-05 17:10:18,690 [INFO] RAGEvaluator.run test completed
+2025-05-05 17:10:18,693 [INFO] Testing QAEvaluator initialization
+2025-05-05 17:10:18,694 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,694 [INFO] QAEvaluator initialization test completed
+2025-05-05 17:10:18,696 [INFO] Testing QAEvaluator._cosine_similarity method
+2025-05-05 17:10:18,697 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,697 [INFO] QAEvaluator._cosine_similarity test completed
+2025-05-05 17:10:18,700 [INFO] Testing QAEvaluator._get_bert_f1 method
+2025-05-05 17:10:18,700 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,700 [INFO] QAEvaluator._get_bert_f1 test completed
+2025-05-05 17:10:18,703 [INFO] Testing QAEvaluator._get_rouge_score method
+2025-05-05 17:10:18,704 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,704 [INFO] QAEvaluator._get_rouge_score test completed
+2025-05-05 17:10:18,707 [INFO] Testing QAEvaluator.calculate_metrics method
+2025-05-05 17:10:18,708 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,709 [INFO] QAEvaluator.calculate_metrics test completed
+2025-05-05 17:10:18,712 [INFO] Testing QAEvaluator.calculate_grade method
+2025-05-05 17:10:18,712 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,712 [INFO] QAEvaluator.calculate_grade test completed
+2025-05-05 17:10:18,715 [INFO] Testing QAEvaluator.evaluate_excel method
+2025-05-05 17:10:18,715 [INFO] QAEvaluator initialized with E5 and ROUGE scorers.
+2025-05-05 17:10:18,720 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 17:10:18,720 [INFO] Starting evaluation of predictions...
+2025-05-05 17:10:18,722 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 17:10:18,723 [INFO] Summary saved to: summary.json
+2025-05-05 17:10:18,723 [INFO] Summary:
+{
+  "rouge_score": 0.6499999999999999,
+  "cosine_similarity": 0.75,
+  "bert_score_f1": 0.8500000000000001,
+  "final_score": 0.8,
+  "grade": "B (Good)"
+}
+2025-05-05 17:10:18,724 [INFO] Reading input Excel file: bad_input.xlsx
+2025-05-05 17:10:18,724 [ERROR] Excel file missing required columns: {'Predicted_Answer', 'Answer', 'Question'}
+2025-05-05 17:10:18,727 [INFO] Reading input Excel file: input.xlsx
+2025-05-05 17:10:18,728 [INFO] Starting evaluation of predictions...
+2025-05-05 17:10:18,728 [WARNING] Error evaluating row 0: Evaluation error
+2025-05-05 17:10:18,728 [WARNING] Error evaluating row 1: Evaluation error
+2025-05-05 17:10:18,729 [INFO] Evaluation results saved to: output.xlsx
+2025-05-05 17:10:18,730 [INFO] Summary saved to: summary.json
+2025-05-05 17:10:18,730 [INFO] Summary:
+{
+  "rouge_score": 0.0,
+  "cosine_similarity": 0.0,
+  "bert_score_f1": 0.0,
+  "final_score": 0.0,
+  "grade": "F (Poor)"
+}
+2025-05-05 17:10:18,730 [INFO] QAEvaluator.evaluate_excel test completed
+2025-05-05 17:10:18,734 [INFO] Testing ChunkUploader initialization
+2025-05-05 17:10:18,734 [INFO] Connected to Weaviate at http://test-url
+2025-05-05 17:10:18,734 [INFO] Loaded embedding model: test-model
+2025-05-05 17:10:18,735 [ERROR] Failed to connect to Weaviate: Connection error
+2025-05-05 17:10:18,735 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:10:18,735 [ERROR] Error loading embedding model: Model error
+2025-05-05 17:10:18,735 [INFO] ChunkUploader initialization test completed
+2025-05-05 17:10:18,739 [INFO] Testing ChunkUploader.load_text method
+2025-05-05 17:10:18,739 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:10:18,739 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:10:18,743 [ERROR] Text file not found: test.txt
+2025-05-05 17:10:18,744 [ERROR] Failed to read file: File error
+2025-05-05 17:10:18,744 [INFO] ChunkUploader.load_text test completed
+2025-05-05 17:10:18,747 [INFO] Testing ChunkUploader.split_text_semantic method
+2025-05-05 17:10:18,747 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:10:18,747 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:10:18,748 [INFO] Text split into 3 chunks
+2025-05-05 17:10:18,748 [INFO] ChunkUploader.split_text_semantic test completed
+2025-05-05 17:10:18,751 [INFO] Testing ChunkUploader.create_weaviate_schema method
+2025-05-05 17:10:18,751 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:10:18,751 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:10:18,752 [INFO] Old schema deleted (if any)
+2025-05-05 17:10:18,753 [INFO] Schema created with class: TestClass
+2025-05-05 17:10:18,753 [ERROR] Failed to create schema in Weaviate: Schema error
+2025-05-05 17:10:18,753 [INFO] ChunkUploader.create_weaviate_schema test completed
+2025-05-05 17:10:18,756 [INFO] Testing ChunkUploader.insert_chunks method
+2025-05-05 17:10:18,756 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:10:18,756 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:10:18,758 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 17:10:18,758 [ERROR] Embedding generation failed: Embedding error
+2025-05-05 17:10:18,759 [WARNING] Failed to insert chunk 2: Insert error
+2025-05-05 17:10:18,759 [INFO] All chunks uploaded (some may have failed, check logs)
+2025-05-05 17:10:18,759 [INFO] ChunkUploader.insert_chunks test completed
+2025-05-05 17:10:18,762 [INFO] Testing ChunkUploader.run method
+2025-05-05 17:10:18,762 [INFO] Connected to Weaviate at http://localhost:8080
+2025-05-05 17:10:18,762 [INFO] Loaded embedding model: intfloat/e5-base-v2
+2025-05-05 17:10:18,763 [INFO]  Starting upload process...
+2025-05-05 17:10:18,763 [INFO]  Upload completed successfully!
+2025-05-05 17:10:18,764 [INFO]  Starting upload process...
+2025-05-05 17:10:18,764 [ERROR]  Process failed: Process error
+2025-05-05 17:10:18,764 [INFO] ChunkUploader.run test completed
+2025-05-05 17:10:18,766 [INFO] Testing WeaviateRetriever initialization
+2025-05-05 17:10:18,767 [ERROR] Error initializing WeaviateRetriever: Connection error
+2025-05-05 17:10:18,767 [INFO] WeaviateRetriever initialization test completed
+2025-05-05 17:10:18,770 [INFO] Testing WeaviateRetriever.retrieve method
+2025-05-05 17:10:18,772 [ERROR] Retrieval failed: Encoding error
+2025-05-05 17:10:18,772 [INFO] WeaviateRetriever.retrieve test completed
+2025-05-05 17:10:18,775 [INFO] Testing Reranker initialization
+2025-05-05 17:10:18,775 [ERROR] Failed to initialize Reranker: Model load error
+2025-05-05 17:10:18,775 [INFO] Reranker initialization test completed
+2025-05-05 17:10:18,777 [INFO] Testing Reranker.rerank method
+2025-05-05 17:10:18,778 [WARNING] No chunks to rerank.
+2025-05-05 17:10:18,778 [ERROR] Reranking failed: Prediction error
+2025-05-05 17:10:18,778 [INFO] Reranker.rerank test completed
+2025-05-05 17:10:18,779 [INFO] Testing LlamaQuerier initialization
+2025-05-05 17:10:18,780 [INFO] LlamaQuerier initialization test completed
+2025-05-05 17:10:18,781 [INFO] Testing LlamaQuerier.query method
+2025-05-05 17:10:18,783 [ERROR] Failed to query model: Request error
+2025-05-05 17:10:18,783 [INFO] LlamaQuerier.query test completed
+2025-05-05 17:10:18,788 [INFO] Testing QAApp initialization and load_history
+2025-05-05 17:10:18,790 [INFO] QAApp initialization and load_history test completed
+2025-05-05 17:10:18,794 [INFO] Testing QAApp.save_history method
+2025-05-05 17:10:18,799 [ERROR] Failed to save JSON file /tmp/pytest-of-shtlp_0047/pytest-10/test_save_history0/history.json: [Errno 13] Permission denied: '/tmp/pytest-of-shtlp_0047/pytest-10/test_save_history0/history.json'
+2025-05-05 17:10:18,799 [INFO] QAApp.save_history test completed
+2025-05-05 17:10:18,803 [INFO] Testing QAApp._format_prompt method
+2025-05-05 17:10:18,803 [INFO] QAApp._format_prompt test completed
+2025-05-05 17:10:18,804 [INFO] Testing TextLoader.load method
+2025-05-05 17:10:18,808 [INFO] Loaded text from test.txt
+2025-05-05 17:10:18,808 [ERROR] Error reading file nonexistent.txt: File error
+2025-05-05 17:10:18,808 [INFO] TextLoader.load test completed
+2025-05-05 17:10:18,810 [INFO] Testing TextSplitter initialization
+2025-05-05 17:10:18,812 [INFO] TextSplitter initialization test completed
+2025-05-05 17:10:18,813 [INFO] Testing TextSplitter.split method
+2025-05-05 17:10:18,813 [INFO] Split text into 3 chunks
+2025-05-05 17:10:18,814 [ERROR] Error splitting text: Splitting error
+2025-05-05 17:10:18,814 [INFO] TextSplitter.split test completed
+2025-05-05 17:10:18,815 [INFO] Testing LLaMAClient initialization
+2025-05-05 17:10:18,815 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 17:10:18,815 [INFO] LLaMAClient initialization test completed
+2025-05-05 17:10:18,817 [INFO] Testing LLaMAClient.query method
+2025-05-05 17:10:18,817 [INFO] LLaMAClient initialized with model: test-model and URL: http://test-url
+2025-05-05 17:10:18,818 [ERROR] Error querying LLaMA: HTTP error
+2025-05-05 17:10:18,818 [INFO] LLaMAClient.query test completed
+2025-05-05 17:10:18,820 [INFO] Testing QAGenerator initialization
+2025-05-05 17:10:18,820 [INFO] QAGenerator initialization test completed
+2025-05-05 17:10:18,822 [INFO] Testing QAGenerator._build_prompt method
+2025-05-05 17:10:18,822 [INFO] QAGenerator._build_prompt test completed
+2025-05-05 17:10:18,823 [INFO] Testing QAGenerator.generate method
+2025-05-05 17:10:18,824 [INFO] Generating Q&A for 3 chunks
+2025-05-05 17:10:19,225 [INFO] Q&A generation complete
+2025-05-05 17:10:19,227 [INFO] QAGenerator.generate test completed
+2025-05-05 17:10:19,228 [INFO] Testing DataSaver.to_csv method
+2025-05-05 17:10:19,229 [INFO] Saved 2 Q&A pairs to test.csv
+2025-05-05 17:10:19,229 [ERROR] Error saving CSV to error.csv: Save error
+2025-05-05 17:10:19,229 [INFO] DataSaver.to_csv test completed
+2025-05-05 17:10:19,231 [INFO] Testing main execution flow
+2025-05-05 17:10:19,234 [INFO] Main execution flow test completed
+2025-05-05 17:10:19,236 [INFO] Testing WikipediaScraper initialization
+2025-05-05 17:10:19,236 [INFO] WikipediaScraper initialization test completed
+2025-05-05 17:10:19,237 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 17:10:19,237 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 17:10:19,239 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 17:10:19,240 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 17:10:19,240 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 17:10:19,240 [WARNING] Failed to fetch https://en.wikipedia.org/wiki/Bad_Page - Status: 404
+2025-05-05 17:10:19,240 [WARNING] Content div not found for Missing_Div
+2025-05-05 17:10:19,241 [WARNING] Content div not found for Missing_Div
+2025-05-05 17:10:19,241 [WARNING] Content div not found for Missing_Div
+2025-05-05 17:10:19,241 [ERROR] Error scraping Error_Page (Attempt 0/3): Connection error
+2025-05-05 17:10:21,243 [ERROR] Error scraping Error_Page (Attempt 1/3): Connection error
+2025-05-05 17:10:23,246 [ERROR] Error scraping Error_Page (Attempt 2/3): Connection error
+2025-05-05 17:10:25,249 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 17:10:25,251 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 17:10:25,255 [INFO] Data saved successfully to test_file.txt
+2025-05-05 17:10:25,256 [ERROR] Error saving file error_file.txt: Write error
+2025-05-05 17:10:25,256 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 17:10:25,259 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 17:10:25,261 [INFO] Scraping topic: Topic1
+2025-05-05 17:10:26,764 [INFO] Scraping topic: Topic2
+2025-05-05 17:10:28,268 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 17:10:28,273 [INFO] Testing RAGQuestionAnswering initialization
+2025-05-05 17:10:28,273 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,273 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,274 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,274 [CRITICAL] Initialization failed: Connection error
+2025-05-05 17:10:28,274 [INFO] RAGQuestionAnswering initialization test completed
+2025-05-05 17:10:28,278 [INFO] Testing RAGQuestionAnswering.search_weaviate method
+2025-05-05 17:10:28,278 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,279 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,281 [INFO] Retrieved 2 context chunks from Weaviate.
+2025-05-05 17:10:28,281 [ERROR] Error during Weaviate search: Encoding error
+2025-05-05 17:10:28,281 [INFO] RAGQuestionAnswering.search_weaviate test completed
+2025-05-05 17:10:28,286 [INFO] Testing RAGQuestionAnswering.query_llama method
+2025-05-05 17:10:28,286 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,286 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,287 [INFO] LLaMA responded successfully.
+2025-05-05 17:10:28,287 [ERROR] Error querying llama3: HTTP error
+2025-05-05 17:10:28,287 [INFO] RAGQuestionAnswering.query_llama test completed
+2025-05-05 17:10:28,291 [INFO] Testing RAGQuestionAnswering.question_fetch method
+2025-05-05 17:10:28,296 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,296 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,296 [INFO] Loaded questions from test.csv
+2025-05-05 17:10:28,297 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,297 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,297 [ERROR] Error reading CSV file: File error
+2025-05-05 17:10:28,297 [INFO] RAGQuestionAnswering.question_fetch test completed
+2025-05-05 17:10:28,301 [INFO] Testing RAGQuestionAnswering.prepare_workbook method
+2025-05-05 17:10:28,305 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,305 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,307 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,307 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,308 [INFO] RAGQuestionAnswering.prepare_workbook test completed
+2025-05-05 17:10:28,313 [INFO] Testing RAGQuestionAnswering.run method
+2025-05-05 17:10:28,314 [INFO] Initializing RAGQuestionAnswering system
+2025-05-05 17:10:28,314 [INFO] Weaviate client and embedding model initialized successfully.
+2025-05-05 17:10:28,315 [INFO] Starting RAG-based Q&A generation...
+2025-05-05 17:10:28,316 [INFO] Processing question: Test question 1
+2025-05-05 17:10:28,316 [INFO] Generated answer: Predicted answer
+2025-05-05 17:10:28,317 [INFO] Processing question: Test question 2
+2025-05-05 17:10:28,317 [INFO] Generated answer: Predicted answer
+2025-05-05 17:10:28,317 [INFO] All predictions saved to: data/qa_with_predictions.xlsx
+2025-05-05 17:10:28,317 [INFO] RAGQuestionAnswering.run test completed

@@ -1,0 +1,110 @@
+2025-05-05 16:31:14,888 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:31:14,889 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:31:14,890 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:31:14,890 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:31:14,892 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:31:20,901 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:31:20,903 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:31:20,907 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:31:20,910 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:31:23,916 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:35:24,524 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:35:24,524 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:35:24,525 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:35:24,525 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:35:24,527 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:35:30,537 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:35:30,540 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:35:30,545 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:35:30,547 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:35:33,554 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:41:17,941 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:41:17,941 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:41:17,942 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:41:17,942 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:41:17,944 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:41:23,955 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:41:23,957 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:41:23,965 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:41:23,968 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:41:26,978 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:44:51,515 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:44:51,516 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:44:51,517 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:44:51,517 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:44:51,521 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:44:57,533 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:44:57,536 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:44:57,540 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:44:57,544 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:45:00,552 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:48:54,835 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:48:54,835 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:48:54,837 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:48:54,837 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:48:54,839 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:49:00,847 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:49:00,850 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:49:00,854 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:49:00,856 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:49:03,863 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:49:49,816 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:49:49,816 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:49:49,818 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:49:49,818 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:49:49,819 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:49:55,828 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:49:55,830 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:49:55,833 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:49:55,836 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:49:58,842 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:51:07,598 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:51:07,599 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:51:07,600 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:51:07,600 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:51:07,602 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:51:13,612 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:51:13,615 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:51:13,620 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:51:13,622 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:51:16,627 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:52:40,754 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:52:40,755 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:52:40,757 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:52:40,757 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:52:40,759 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:52:46,769 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:52:46,771 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:52:46,776 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:52:46,778 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:52:49,785 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:53:28,119 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:53:28,119 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:53:28,121 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:53:28,121 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:53:28,123 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:53:34,133 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:53:34,136 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:53:34,141 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:53:34,144 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:53:37,150 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 16:54:10,329 [INFO] Testing WikipediaScraper initialization
+2025-05-05 16:54:10,330 [INFO] WikipediaScraper initialization test completed
+2025-05-05 16:54:10,331 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 16:54:10,331 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 16:54:10,334 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 16:54:16,343 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 16:54:16,346 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 16:54:16,351 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 16:54:16,355 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 16:54:19,363 [INFO] WikipediaScraper.scrape_all test completed
+2025-05-05 17:10:19,236 [INFO] Testing WikipediaScraper initialization
+2025-05-05 17:10:19,236 [INFO] WikipediaScraper initialization test completed
+2025-05-05 17:10:19,237 [INFO] Testing WikipediaScraper.clean_text method
+2025-05-05 17:10:19,237 [INFO] WikipediaScraper.clean_text test completed
+2025-05-05 17:10:19,239 [INFO] Testing WikipediaScraper.scrape_page method
+2025-05-05 17:10:25,249 [INFO] WikipediaScraper.scrape_page test completed
+2025-05-05 17:10:25,251 [INFO] Testing WikipediaScraper.save_to_file method
+2025-05-05 17:10:25,256 [INFO] WikipediaScraper.save_to_file test completed
+2025-05-05 17:10:25,259 [INFO] Testing WikipediaScraper.scrape_all method
+2025-05-05 17:10:28,268 [INFO] WikipediaScraper.scrape_all test completed
