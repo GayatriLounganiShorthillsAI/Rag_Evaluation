@@ -242,24 +242,3 @@ This project successfully integrates web scraping, vector search, and LLM-based 
 
 
 
-
-
-<!-- ### `get_unicorn_startups()`
-
-* Extracts startup details and links from the Wikipedia unicorn list page.
-* Returns a list of dictionaries, one per startup.
-
-### `scrape_startup_page(startup, index)`
-
-* Visits the startup’s Wikipedia page using the link.
-* Parses, cleans, and saves the content to a `.txt` file.
-
-### `scrape_unicorns()`
-
-* Driver function that coordinates:
-
-  * Table scraping
-  * Iterating over startups
-  * Company page scraping and file saving
-
---- -->
