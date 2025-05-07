@@ -9,7 +9,7 @@ This project involves scraping Historical documents from Wikipedia, extracting r
 # 1. Web Scrapping
 
 
-## 📌 Features
+## Features
 
 - Scrapes introductory content from Wikipedia pages.
 - Supports retry logic with customizable delay.
@@ -19,7 +19,7 @@ This project involves scraping Historical documents from Wikipedia, extracting r
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Python 3**
 * `requests` – HTTP requests to fetch web content
@@ -28,7 +28,7 @@ This project involves scraping Historical documents from Wikipedia, extracting r
 
 ---
 
-## ⚙️ Workflow
+## Workflow
 
 1. **Fetch Wikipedia Page**
    The script makes a request to the Wikipedia page listing
@@ -43,7 +43,7 @@ This project involves scraping Historical documents from Wikipedia, extracting r
 
 ---
 
-## 🧩 Key Functions
+## Key Functions
 
 ### `@staticmethod clean_text(text)`
 Cleans a given text by:
